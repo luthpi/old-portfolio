@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+@media (max-width: 200px) {
+    * {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    @apply w-[10px];
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-[#272727];
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-[#161616] rounded-lg;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@layer base {
+    body {
+        @apply font-["Poppins"];
+    }
+}
+
+.custom-transition {
+    transition: all 0.3s ease;
+}
+
+.dot5-transition {
+    transition: all 0.5s ease;
+}
+
+#upButton {
+    transition: margin 0.4s ease-out, transform 0.3s, background-color 0.4s;
+}
+
+.social {
+    @apply w-[37px] h-[37px] flex justify-center items-center text-3xl rounded-lg bg-[#373737] hover:bg-[#303030] hover:scale-110 shadow-md p-4;
+    transition: all 0.15s ease ;
+}
+
+.skills {
+    @apply grayscale invert w-[30px]
+}
+
+#name {
+    background: #9CE9E4;
+    background: linear-gradient(to right, #32c9bf 17%, #00b3ff 76%, #31aadf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hovScale {
+    @apply hover:text-[19px];
+    transition: all 0.1s ease-out;
+}
+
+.hovScale:hover {
+    transition: all 0.15s ease-out;
+}
+
+.btn {
+    @apply shadow-md text-gray-100 py-2 px-3 rounded-md flex items-center gap-2 custom-transition bg-transparent border-[1px] hover:border-sky-600 hover:bg-sky-600 text-sm md:text-lg lg:text-xl
+}
+
+.small-btn { 
+    @apply shadow-md text-gray-100 py-1 px-2 rounded-md flex items-center gap-2 custom-transition bg-transparent border-[1px] hover:border-sky-600 hover:bg-sky-600 text-sm md:text-lg
+}
+
+.btn, .small-btn, img {
+    @apply selection:bg-transparent
+}
