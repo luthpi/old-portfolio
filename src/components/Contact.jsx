@@ -3,7 +3,7 @@ import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [inputText, setInputText] = useState("")
-  const maxLength = 258
+  const maxLength = 512
   const handleChange = event => {
     setInputText(event.target.value)
   };
