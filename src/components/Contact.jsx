@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const [inputText, setInputText] = useState("")
+  const maxLength = 258
+  const handleChange = event => {
+    setInputText(event.target.value)
+  };
   return (
     <div
       id="contact"
@@ -46,11 +51,14 @@ const Contact = () => {
               id="inputMsg"
               name="msg"
               className="bg-[#343434] text-white rounded-lg h-[85px] w-full focus:outline-0 p-2 overflow-y-hidden"
-              maxLength={300}
+              maxLength={maxLength}
               spellCheck="false"
               required
+              value={inputText} 
+              onChange={handleChange}
               placeholder="This form is working. Do not spam please!"
             ></textarea>
+            <p>{inputText.length}/{maxLength}</p>
           </li>
           <li className="mx-auto px-2">
             <button type="submit" className="btn custom-transition mt-3">
