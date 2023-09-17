@@ -1,7 +1,6 @@
-import React from "react";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import React from "react";import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import unbg from "../assets/img/unbg.png";
+import unbg from "../assets/img/unbg2.png";
 
 const Home = () => {
   return (
