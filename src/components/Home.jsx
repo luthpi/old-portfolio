@@ -19,10 +19,10 @@ const Home = () => {
           I'm <strong id="name">Luthpai</strong>
         </h1>
         <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-[#b7c5ce] mt-2 custom-transition">
-          A Middle School Student
+          A Junior High School Student
         </h1>
         <p className="text-sm md:text-lg lg:text-xl mt-1 my-3 text-[#b7c5ce] max-w-[700px] custom-transition text-center">
-          I'm a middle school student who love programming
+          I'm a junior high school student who loves programming
         </p>
         <div className="flex flex-wrap">
           <a href="#projects" className="btn group">

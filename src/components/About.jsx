@@ -17,12 +17,11 @@ const About = () => {
             Hello There!
           </h1>
           <div className="mb-2 mx-auto text-center md:w-[50%]">
-            I'm Luthfi Afriansyah. My friends call me Luthpai. I'm Indonesian,
-            born in May 2009. I started learning web development since I was 12.
-            I enjoy front end web development.
+            I'm Luthfi Afriansyah. I'm into web development, I can work with ReactJs, TailwindCSS for Frontend and NodeJs for Backend,
+          I was born in May 2009. I started learning web development since I was 12.
             <br /> <br />
-            Normally, I keep my repositories on Github. So don't forget to take
-            a look.
+            I have a GitHub page and an Istagram account! Check them out!
+      
             <Socials />
           </div>
         </p>

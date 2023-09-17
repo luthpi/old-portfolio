@@ -30,6 +30,10 @@ html, body {
 @layer base {
     body {
         @apply font-["Poppins"];
+    },
+    html, *, div, a, button{
+        -webkit-tap-highlight-color: transparent !important;     
+
     }
 }
 

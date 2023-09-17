@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
       <Socials />
       <div className="flex flex-col gap-1 items-center text-center text-sm">
-        <span>Copyright &copy; 2022 Muhammad Luthfi Afriansyah</span>
+        <span>Copyright &copy; {new Date().getFullYear()} Muhammad Luthfi Afriansyah</span>
         <span className="flex items-center gap-2 border-y-[1px] p-2 mt-2">
           Built with <GiCoffeeCup /> & <FaHeart /> by Luthpai
         </span>
