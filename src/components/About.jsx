@@ -20,7 +20,7 @@ const About = () => {
             I'm Luthfi Afriansyah. I'm into web development, I can work with ReactJs, TailwindCSS for Frontend and NodeJs for Backend,
           I was born in May 2009. I started learning web development since I was 12.
             <br /> <br />
-            I have a GitHub page and an Istagram account! Check them out!
+            I have a GitHub page and an Instagram account! Check them out!
       
             <Socials />
           </div>
