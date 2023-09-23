@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-    @apply w-[10px];
+    @apply w-[6px];
 }
 
 ::-webkit-scrollbar-track {
