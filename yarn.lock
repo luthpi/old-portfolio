@@ -509,7 +509,7 @@ electron-to-chromium@^1.4.477:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.513.tgz"
   integrity sha512-cOB0xcInjm+E5qIssHeXJ29BaUyWpMyFKT5RB3bsLENDheCja0wMkHJyiPl0NBE/VzDI7JDuNEQWhe6RitEUcw==
 
-esbuild-android-arm64@^0.15.18, esbuild-android-arm64@0.15.18:
+esbuild-android-arm64@0.15.18:
   version "0.15.18"
   resolved "https://registry.npmjs.org/esbuild-android-arm64/-/esbuild-android-arm64-0.15.18.tgz"
   integrity sha512-G4xu89B8FCzav9XU8EjsXacCKSG2FT7wW9J6hOc18soEHJdtWu03L3TQDGf0geNxfLTtxENKBzMSq9LlbjS8OQ==
