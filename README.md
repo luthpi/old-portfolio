@@ -16,7 +16,3 @@ My portfolio, built with Vite, React, and Tailwind
 ## License
 
 MIT License
-
-## Copyright
-
-Copyright (c) 2022 Muhammad Luthfi Afriansyah
