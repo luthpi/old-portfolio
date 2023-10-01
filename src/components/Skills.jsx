@@ -44,7 +44,7 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-start box-border gap-4 custom-transition">
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch box-border gap-4 custom-transition">
         <div
           className="flex-wrap flex bg-[#343434] flex-col rounded-lg w-full md:w-fit mt-3 items-start custom-transition px-4 py-3 shadow-lg"
           data-aos="flip-left"

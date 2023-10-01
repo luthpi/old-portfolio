@@ -21,7 +21,7 @@ const Contact = () => {
       <form
         action="https://formspree.io/f/xjvzobrn"
         method="post"
-        className="mt-8 mx-auto"
+        className="mt-8 mx-auto md:w-[70%]"
       >
         <ul className="mx-auto px-4">
           <li

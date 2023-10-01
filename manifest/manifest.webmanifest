@@ -1,9 +1,9 @@
 {
-  "theme_color": "#595959",
-  "background_color": "#575553",
-  "display": "fullscreen",
+  "theme_color": "#202020",
+  "background_color": "#202020",
+  "display": "standalone",
   "scope": "/",
-  "start_url": "/#home",
+  "start_url": "/",
   "name": "Luthpai's Portfolio",
   "short_name": "Luthpai",
   "description": "Luthpai's Portfolio",
