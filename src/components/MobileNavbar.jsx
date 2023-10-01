@@ -26,7 +26,7 @@ text-3xl custom-transition"
         ref={ref}
         className={
           !nav
-            ? "fixed top-0 -right-[70vh] w-[50vw] shadow-2xl h-[100vh] bg-[#161616] flex flex-col justify-start items-center shadow-2xl border-l-[2px] lg:hidden pt-16 border-gray-500 mnshadow box-border"
+            ? "fixed top-0 -right-[100vh] w-[50vw] shadow-2xl h-[100vh] bg-[#161616] flex flex-col justify-start items-center shadow-2xl border-l-[2px] lg:hidden pt-16 border-gray-500 mnshadow box-border"
             : "fixed right-0 w-[50vw] top-0 h-[100vh] bg-[#161616] lg:hidden flex flex-col justify-start items-center  lg:hidden shadow-2xl border-l-[2px] pt-16 border-gray-500 mnshadow box-border"
         }
       >
