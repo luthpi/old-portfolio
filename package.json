@@ -4,6 +4,7 @@
   "private": true,
   "author": "Luthfi Afriansyah <luthpai.afr@gmail.com>",
   "scripts": {
+    "ready": "prettier --write . && git push",
     "dev": "vite --port 1234",
     "build": "vite build",
     "preview": "vite preview --port 1234"

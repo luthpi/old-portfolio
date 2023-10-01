@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AiOutlineHome } from 'react-icons/ai'
+import { BsPerson } from 'react-icons/bs'
+import { HiOutlineComputerDesktop } from 'react-icons/hi2'
+import { AiOutlineFolderOpen, AiOutlineMail } from 'react-icons/ai'
 
 const MobileNavbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,48 +21,54 @@ text-3xl custom-transition"
       >
         <FontAwesomeIcon className="custom-transition" icon={faBars} />
       </div>
-      <ul
+      <div
         id="mobileMenuToggle"
         ref={ref}
         className={
           !nav
-            ? "fixed -top-[30rem] w-full shadow-2xl h-[50vh] left-0 bg-[#202020] flex flex-col justify-center items-center gap-2 rounded-b-3xl shadow-2xl border-b-[2px]"
-            : "fixed top-0 left-0 w-full h-[50vh] bg-[#202020] flex flex-col justify-center items-center gap-2 rounded-b-3xl shadow-2xl border-b-[2px]"
+            ? "fixed top-0 -right-[70vh] w-[50vw] shadow-2xl h-[100vh] bg-[#161616] flex flex-col justify-start items-center shadow-2xl border-l-[2px] lg:hidden pt-16 border-gray-500 mnshadow box-border"
+            : "fixed right-0 w-[50vw] top-0 h-[100vh] bg-[#161616] lg:hidden flex flex-col justify-start items-center  lg:hidden shadow-2xl border-l-[2px] pt-16 border-gray-500 mnshadow box-border"
         }
       >
+      <ul className="flex justify-center items-start flex-col gap-3">
         <li
           onClick={navClick}
-          className="text-2xl custom-transition hover:text-gray-300"
+          className="text-2xl custom-transition hover:text-gray-300 flex justify-between gap-2 items-center hover:scale-110"
         >
+          <AiOutlineHome />
           <a href="#home"> Home</a>
         </li>
         <li
           onClick={navClick}
-          className="text-2xl custom-transition hover:text-gray-300"
+          className="text-2xl custom-transition hover:text-gray-300 flex justify-between gap-2 items-center hover:scale-110"
         >
+        <BsPerson />
           <a href="#about"> About</a>
         </li>
         <li
           onClick={navClick}
-          className="text-2xl custom-transition hover:text-gray-300"
+          className="text-2xl custom-transition hover:text-gray-300 flex justify-between gap-2 items-center hover:scale-110"
         >
+        <HiOutlineComputerDesktop />
           <a href="#skills"> Skills</a>
         </li>
         <li
           onClick={navClick}
-          className="text-2xl custom-transition hover:text-gray-300"
+          className="text-2xl custom-transition hover:text-gray-300 flex justify-between gap-2 items-center hover:scale-110"
         >
+        <AiOutlineFolderOpen />
           <a href="#projects"> Projects</a>
         </li>
         <li
           onClick={navClick}
-          className="text-2xl custom-transition hover:text-gray-300"
+          className="text-2xl custom-transition hover:text-gray-300 flex justify-between gap-2 items-center hover:scale-110"
         >
+        <AiOutlineMail />
           <a href="#contact"> Contact</a>
         </li>
         <li
           onClick={navClick}
-          className="text-3xl custom-transition absolute z-20 -bottom-5 p-3 rounded-full border-2 w-[45px] h-[45px] bg-[#202020] flex items-center justify-center right-5"
+          className="text-3xl custom-transition absolute z-20 -left-6 p-3 rounded-full border-2 border-gray-500 w-[45px] h-[45px] bg-[#202020] flex items-center justify-center top-[30vh]"
         >
           <FontAwesomeIcon
             className="custom-transition text-4xl"
@@ -66,6 +76,7 @@ text-3xl custom-transition"
           />
         </li>
       </ul>
+      </div>
     </>
   );
 };

@@ -20,22 +20,24 @@ const About = () => {
             Hello There!
           </h1>
           <div className="mb-2 mx-auto text-center md:w-[50%] flex flex-col gap-3">
-            <span>
+            <span data-aos="fade-left">
               I'm Luthfi Afriansyah. I'm into web development, I can work with
               ReactJs, TailwindCSS for Frontend and NodeJs for Backend, I was
               born in May 2009. I started learning web development since I was
               12.
             </span>
-            <span>
+            <span data-aos="fade-right">
               I have some soft skills, I can communicate in English because I've
               been learning English since I was a child, I'm a fast learner, I
               can solve problems quickly, I always be energetic when I'm coding!
             </span>
-            <span>
+            <span data-aos="fade-left">
               I have a GitHub page and an Instagram account! Check them out!
             </span>
+            <span data-aos="fade-right">
+              <Socials />
+            </span>
           </div>
-          <Socials />
         </p>
       </div>
     </div>
