@@ -1,29 +1,29 @@
 /* w-screen h-screen flex flex-col justify-center items-center text-white bg-[#151515] fixed z-[999] gap-4 custom-transition */
 
 @font-face {
-    font-family: ppins;
-    src: url(./Poppins-Regular.ttf);
+  font-family: ppins;
+  src: url(./Poppins-Regular.ttf);
 }
 
 #preload {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #151515;
-    position: fixed;
-    z-index: 999;
-    transition: 0.4s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #151515;
+  position: fixed;
+  z-index: 999;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #smile {
-    filter: invert();
-    transition: 0.3s;
+  filter: invert();
+  transition: 0.3s;
 }

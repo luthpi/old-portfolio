@@ -1,15 +1,19 @@
 # Luthpai's Portfolio
 
-My portfolio, built with Vite, React, and Tailwind
+My portfolio, built with React, and Tailwind, bundled by Vite
 
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=luthpai&style=for-the-badge)
 
-## Techs
+## Techs and Libraries
+
 - Vite
 - React
 - Tailwind
+- Animate on scroll ( AOS )
+- Animate.css
 
 ## Icons
+
 - React Icons ( Bundled Font Awesome, Simple Icons )
 - Font Awesome
 

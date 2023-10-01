@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="md:px-20 w-full fixed h-[60px] py-1 flex items-center justify-between px-4 dot5-transition bg-transparent text-white top-0"
+      className="md:px-20 w-full fixed h-[60px] py-1 z-[99] flex items-center justify-between px-4 dot5-transition bg-transparent text-white top-0"
     >
       <WideNavbar />
       <MobileNavbar />

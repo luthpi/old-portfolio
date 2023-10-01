@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
-  const [inputText, setInputText] = useState("")
-  const maxLength = 512
-  const handleChange = event => {
-    setInputText(event.target.value)
+  const [inputText, setInputText] = useState("");
+  const maxLength = 512;
+  const handleChange = (event) => {
+    setInputText(event.target.value);
   };
   return (
     <div
       id="contact"
       className="md:px-20 w-full h-fit py-12 bg-[#292929] text-gray-200 flex flex-col justify-center items-center box-border custom-transition"
     >
-      <h1 className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8">
+      <h1 className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8" data-aos="fade-up">
         Contact
       </h1>
       <form
@@ -21,7 +21,8 @@ const Contact = () => {
         className="mt-8 mx-auto"
       >
         <ul className="mx-auto px-4">
-          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2">
+          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
+          data-aos="fade-left">
             <label htmlFor="inputName">Name</label>
             <input
               type="text"
@@ -33,7 +34,7 @@ const Contact = () => {
               required
             />
           </li>
-          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2">
+          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2" data-aos="fade-left">
             <label htmlFor="inputEmail">Email</label>
             <input
               type="email"
@@ -45,7 +46,7 @@ const Contact = () => {
               required
             />
           </li>
-          <li className="flex flex-col justify-center gap-2 mx-auto px-2">
+          <li className="flex flex-col justify-center gap-2 mx-auto px-2" data-aos="fade-left">
             <label htmlFor="inputMsg">Message</label>
             <textarea
               id="inputMsg"
@@ -54,13 +55,15 @@ const Contact = () => {
               maxLength={maxLength}
               spellCheck="false"
               required
-              value={inputText} 
+              value={inputText}
               onChange={handleChange}
               placeholder="This form is working. Do not spam please!"
             ></textarea>
-            <p>{inputText.length}/{maxLength}</p>
+            <p data-aos="zoom-in">
+              {inputText.length}/{maxLength}
+            </p>
           </li>
-          <li className="mx-auto px-2">
+          <li className="mx-auto px-2" data-aos="flip-left">
             <button type="submit" className="btn custom-transition mt-3">
               Send <FaEnvelope className="custom-transition" />
             </button>
