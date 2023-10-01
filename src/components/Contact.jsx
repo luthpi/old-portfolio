@@ -12,7 +12,10 @@ const Contact = () => {
       id="contact"
       className="md:px-20 w-full h-fit py-12 bg-[#292929] text-gray-200 flex flex-col justify-center items-center box-border custom-transition"
     >
-      <h1 className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8" data-aos="fade-up">
+      <h1
+        className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8"
+        data-aos="fade-up"
+      >
         Contact
       </h1>
       <form
@@ -21,8 +24,10 @@ const Contact = () => {
         className="mt-8 mx-auto"
       >
         <ul className="mx-auto px-4">
-          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
-          data-aos="fade-left">
+          <li
+            className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
+            data-aos="fade-left"
+          >
             <label htmlFor="inputName">Name</label>
             <input
               type="text"
@@ -34,7 +39,10 @@ const Contact = () => {
               required
             />
           </li>
-          <li className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2" data-aos="fade-left">
+          <li
+            className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
+            data-aos="fade-left"
+          >
             <label htmlFor="inputEmail">Email</label>
             <input
               type="email"
@@ -46,7 +54,10 @@ const Contact = () => {
               required
             />
           </li>
-          <li className="flex flex-col justify-center gap-2 mx-auto px-2" data-aos="fade-left">
+          <li
+            className="flex flex-col justify-center gap-2 mx-auto px-2"
+            data-aos="fade-left"
+          >
             <label htmlFor="inputMsg">Message</label>
             <textarea
               id="inputMsg"

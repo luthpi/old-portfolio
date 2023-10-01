@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const MobileNavbar = () => {
   const [nav, setNav] = useState(false);
   const navClick = () => setNav(!nav);
-  const ref = useRef()
+  const ref = useRef();
   useOnClickOutside(ref, () => setNav(false));
   return (
     <>
@@ -15,8 +15,7 @@ const MobileNavbar = () => {
 text-3xl custom-transition"
         onClick={navClick}
       >
-      
-          <FontAwesomeIcon className="custom-transition" icon={faBars} />
+        <FontAwesomeIcon className="custom-transition" icon={faBars} />
       </div>
       <ul
         id="mobileMenuToggle"
@@ -61,7 +60,10 @@ text-3xl custom-transition"
           onClick={navClick}
           className="text-3xl custom-transition absolute z-20 -bottom-5 p-3 rounded-full border-2 w-[45px] h-[45px] bg-[#202020] flex items-center justify-center right-5"
         >
-                    <FontAwesomeIcon className="custom-transition text-4xl" icon={faClose} />
+          <FontAwesomeIcon
+            className="custom-transition text-4xl"
+            icon={faClose}
+          />
         </li>
       </ul>
     </>
@@ -69,24 +71,21 @@ text-3xl custom-transition"
 };
 
 function useOnClickOutside(ref, handler) {
-  useEffect(
-    () => {
-      const listener = (event) => {
-        // Do nothing if clicking ref's element or descendent elements
-        if (!ref.current || ref.current.contains(event.target)) {
-          return;
-        }
-        handler(event);
-      };
-      document.addEventListener("mousedown", listener);
-      document.addEventListener("touchstart", listener);
-      return () => {
-        document.removeEventListener("mousedown", listener);
-        document.removeEventListener("touchstart", listener);
-      };
-    },
-    [ref, handler]
-  );
+  useEffect(() => {
+    const listener = (event) => {
+      // Do nothing if clicking ref's element or descendent elements
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+      handler(event);
+    };
+    document.addEventListener("mousedown", listener);
+    document.addEventListener("touchstart", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+      document.removeEventListener("touchstart", listener);
+    };
+  }, [ref, handler]);
 }
 
 export default MobileNavbar;

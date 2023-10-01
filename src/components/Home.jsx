@@ -2,7 +2,7 @@ import React from "react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import unbg from "../assets/img/unbg2.png";
-import 'animate.css'
+import "animate.css";
 
 const Home = () => {
   return (
