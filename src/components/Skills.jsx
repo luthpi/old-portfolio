@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -16,6 +16,26 @@ import {
 } from "react-icons/si";
 
 const Skills = () => {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const skills = useRef(null);
+
+  useEffect(() => {
+    const skillsObserver = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { threshold: 0.5 },
+    );
+    skillsObserver.observe(skills.current);
+
+    return () => skillsObserver.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      document.location.hash = "skills";
+    }
+  }, [isIntersecting]);
   const techs = [
     { name: "HTML", ico: FaHtml5 },
     { name: "CSS", ico: FaCss3Alt },
@@ -36,6 +56,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
+      ref={skills}
       className="custom-transition box-border flex h-fit w-full flex-col items-center justify-center bg-[#252525] py-12 text-gray-200 md:px-20"
     >
       <h1

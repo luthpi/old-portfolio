@@ -13,19 +13,19 @@ const WideNavbar = () => {
         <span>Luthpai</span>
       </a>
       <ul className="jusify-end hidden h-full items-center gap-4 text-[15px] font-semibold uppercase md:flex">
-        <li className="hovScale">
+        <li className="liFunc" id="liHome">
           <a href="#home"> Home</a>
         </li>
-        <li className="hovScale">
+        <li className="liFunc" id="liAbout">
           <a href="#about"> About</a>
         </li>
-        <li className="hovScale">
+        <li className="liFunc" id="liSkills">
           <a href="#skills"> Skills</a>
         </li>
-        <li className="hovScale">
+        <li className="liFunc" id="liProjects">
           <a href="#projects"> Projects</a>
         </li>
-        <li className="hovScale">
+        <li className="liFunc" id="liContact">
           <a href="#contact"> Contact</a>
         </li>
       </ul>

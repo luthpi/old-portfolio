@@ -26,8 +26,8 @@ text-3xl md:hidden"
         ref={ref}
         className={
           !nav
-            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start border-l-[2px] border-gray-500 bg-[#161616] pt-16 shadow-2xl shadow-2xl lg:hidden"
-            : "mnshadow fixed right-0 top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start  border-l-[2px] border-gray-500 bg-[#161616] pt-16 shadow-2xl lg:hidden lg:hidden"
+            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start border-l-[2px] border-gray-500 bg-[#161616] pt-16 shadow-2xl md:hidden"
+            : "mnshadow fixed right-0 top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start  border-l-[2px] border-gray-500 bg-[#161616] pt-16 md:hidden"
         }
       >
         <ul className="flex flex-col items-start justify-center gap-3">

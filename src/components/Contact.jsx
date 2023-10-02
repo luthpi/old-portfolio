@@ -1,7 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const contact = useRef(null);
+
+  useEffect(() => {
+    const contactObserver = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { threshold: 0.5 },
+    );
+    contactObserver.observe(contact.current);
+
+    return () => contactObserver.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      document.location.hash = "contact";
+    }
+  }, [isIntersecting]);
   const [inputText, setInputText] = useState("");
   const maxLength = 512;
   const handleChange = (event) => {
@@ -10,6 +30,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
+      ref={contact}
       className="custom-transition box-border flex h-fit w-full flex-col items-center justify-center bg-[#292929] py-12 text-gray-200 md:px-20"
     >
       <h1

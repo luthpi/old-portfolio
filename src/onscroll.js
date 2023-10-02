@@ -11,8 +11,8 @@ export const onscroll = () => {
       navbar.classList.add("bg-transparent");
       navbar.classList.add("py-1");
       navbar.classList.remove("top-0");
-      upButton.classList.add("bottom-5");
-      upButton.classList.add("right-5");
+      upButton.classList.add("bottom-4");
+      upButton.classList.add("right-4");
       upButton.classList.remove("mb-[100vh]");
       upButton.classList.add("mb-0");
       navbar.style.top = "-60px";

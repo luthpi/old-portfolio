@@ -14,8 +14,8 @@ My portfolio, built with React, and Tailwind, bundled by Vite
 
 ## Icons
 
-- React Icons ( Bundled Font Awesome, Simple Icons )
-- Font Awesome
+- React Icons
+- Font Awesome React
 
 ## License
 
