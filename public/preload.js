@@ -1,4 +1,6 @@
 window.onload = () => {
+  document.location.hash = "";
+  window.history.pushState(null, "", window.location.href.replace("#", ""));
   setTimeout(function load() {
     const loader = document.getElementById("preload");
     loader.style.opacity = "0";

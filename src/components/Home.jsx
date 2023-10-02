@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-full h-screen bg-[#202020] custom-transition box-border"
+      className="w-full h-[100vh] bg-[#202020] custom-transition box-border"
     >
       <div className="md:px-20 max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full text-white custom-transition">
         <img

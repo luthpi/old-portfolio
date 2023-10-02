@@ -6,7 +6,7 @@ import { BsPerson } from "react-icons/bs";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { AiOutlineFolderOpen, AiOutlineMail } from "react-icons/ai";
 
-const MobileNavbar = () => {
+const MobileNav = () => {
   const [nav, setNav] = useState(false);
   const navClick = () => setNav(!nav);
   const ref = useRef();
@@ -99,4 +99,4 @@ function useOnClickOutside(ref, handler) {
   }, [ref, handler]);
 }
 
-export default MobileNavbar;
+export default MobileNav;
