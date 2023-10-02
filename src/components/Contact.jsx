@@ -22,15 +22,7 @@ const Contact = () => {
       document.location.hash = "contact";
     }
   }, [isIntersecting]);
-  const [inputText, setInputText] = useState("");
-  const maxLength = 512;
-  const handleChange = (event) => {
-    setInputText(event.target.value);
-  };
-  const handleClick = () => {
-    setInputText('');
-  };
-  
+
   return (
     <div
       id="contact"
@@ -61,8 +53,6 @@ const Contact = () => {
               className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
               placeholder="M Luthfi Afriansyah"
               spellCheck="false"
-              value={inputText}
-              onChange={handleChange}
               required
             />
           </li>
@@ -78,8 +68,6 @@ const Contact = () => {
               className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
               placeholder="luthpai.afr@gmail.com"
               spellCheck="false"
-              value={inputText}
-              onChange={handleChange}
               required
             />
           </li>
@@ -92,24 +80,25 @@ const Contact = () => {
               id="inputMsg"
               name="msg"
               className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
-              maxLength={maxLength}
               spellCheck="false"
               required
-              value={inputText}
-              onChange={handleChange}
               placeholder="This form is working. Do not spam please!"
             ></textarea>
-            <p data-aos="zoom-in">
-              {inputText.length}/{maxLength}
-            </p>
           </li>
           <li className="mx-auto px-2" data-aos="flip-left">
-            <button type="submit" onClick={handleClick()} className="btn custom-transition mt-3">
+            <button type="submit" className="btn custom-transition mt-3">
               Send <FaEnvelope className="custom-transition" />
             </button>
           </li>
         </ul>
       </form>
+      {
+        (window.onbeforeunload = () => {
+          for (const form of document.getElementsByTagName("form")) {
+            form.reset();
+          }
+        })
+      }
     </div>
   );
 };
