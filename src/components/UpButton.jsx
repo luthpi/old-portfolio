@@ -7,7 +7,7 @@ const UpButton = () => {
     <a
       href="#home"
       id="upButton"
-      className="mb-[100vh] hover:scale-110 flex rounded-full p-3 w-[50px] h-[50px] flex-col items-center justify-center text-white bg-sky-500 hover:bg-sky-700 shadow-2xl text-2xl fixed"
+      className="fixed mb-[100vh] flex h-[50px] w-[50px] flex-col items-center justify-center rounded-full bg-sky-500 p-3 text-2xl text-white shadow-2xl hover:scale-110 hover:bg-sky-700"
       role="button"
       aria-label="Up Button"
     >

@@ -7,12 +7,12 @@ const WideNavbar = () => {
     <>
       <a
         href="./"
-        className="flex items-center gap-1 text-xl font-bold tracking-widest text-sky-400 overflow-hidden"
+        className="flex items-center gap-1 overflow-hidden text-xl font-bold tracking-widest text-sky-400"
       >
-        <img src={logo} alt="My Logo" className="w-[48px] p-1 box-border" />
+        <img src={logo} alt="My Logo" className="box-border w-[48px] p-1" />
         <span>Luthpai</span>
       </a>
-      <ul className="hidden md:flex gap-4 uppercase text-[15px] font-semibold h-full items-center jusify-end">
+      <ul className="jusify-end hidden h-full items-center gap-4 text-[15px] font-semibold uppercase md:flex">
         <li className="hovScale">
           <a href="#home"> Home</a>
         </li>

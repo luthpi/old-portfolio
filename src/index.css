@@ -23,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#161616] rounded-lg;
+  @apply rounded-lg bg-[#161616];
 }
 
 html,
@@ -62,7 +62,7 @@ body {
 }
 
 .social {
-  @apply w-[37px] h-[37px] flex justify-center items-center text-3xl rounded-lg bg-[#373737] hover:bg-[#303030] hover:scale-110 shadow-md p-4;
+  @apply flex h-[37px] w-[37px] items-center justify-center rounded-lg bg-[#373737] p-4 text-3xl shadow-md hover:scale-110 hover:bg-[#303030];
   transition: all 0.15s ease;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .skills {
-  @apply grayscale invert w-[30px];
+  @apply w-[30px] grayscale invert;
 }
 
 #name {
@@ -91,11 +91,11 @@ body {
 }
 
 .btn {
-  @apply shadow-md text-gray-100 py-2 px-3 rounded-md flex items-center gap-2 custom-transition bg-transparent border-[1px] hover:border-sky-600 hover:bg-sky-600 text-sm md:text-lg lg:text-xl;
+  @apply custom-transition flex items-center gap-2 rounded-md border-[1px] bg-transparent px-3 py-2 text-sm text-gray-100 shadow-md hover:border-sky-600 hover:bg-sky-600 md:text-lg lg:text-xl;
 }
 
 .small-btn {
-  @apply shadow-md text-gray-100 py-1 px-2 rounded-md flex items-center gap-2 custom-transition bg-transparent border-[1px] hover:border-sky-600 hover:bg-sky-600 text-sm md:text-lg;
+  @apply custom-transition flex items-center gap-2 rounded-md border-[1px] bg-transparent px-2 py-1 text-sm text-gray-100 shadow-md hover:border-sky-600 hover:bg-sky-600 md:text-lg;
 }
 
 .btn,

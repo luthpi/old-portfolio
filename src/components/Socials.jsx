@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Socials = () => {
   return (
     <>
-      <span className="my-3 flex flex-wrap mx-auto justify-center items-center gap-2">
+      <span className="mx-auto my-3 flex flex-wrap items-center justify-center gap-2">
         <a
           href="https://instagram.com/luthpai"
           className="social"

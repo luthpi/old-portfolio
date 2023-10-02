@@ -10,10 +10,10 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="md:px-20 w-full h-fit py-12 bg-[#292929] text-gray-200 flex flex-col justify-center items-center box-border custom-transition"
+      className="custom-transition box-border flex h-fit w-full flex-col items-center justify-center bg-[#292929] py-12 text-gray-200 md:px-20"
     >
       <h1
-        className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8"
+        className="mx-8 inline-block rounded-sm border-b-4 border-sky-600 pb-2 text-4xl font-bold"
         data-aos="fade-up"
       >
         Contact
@@ -21,11 +21,11 @@ const Contact = () => {
       <form
         action="https://formspree.io/f/xjvzobrn"
         method="post"
-        className="mt-8 mx-auto md:w-[70%]"
+        className="mx-auto mt-8 md:w-[70%]"
       >
         <ul className="mx-auto px-4">
           <li
-            className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
+            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2"
             data-aos="fade-left"
           >
             <label htmlFor="inputName">Name</label>
@@ -33,14 +33,14 @@ const Contact = () => {
               type="text"
               id="inputName"
               name="name"
-              className="bg-[#343434] text-white rounded-lg h-[36px] w-full focus:outline-0 p-2"
+              className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
               placeholder="M Luthfi Afriansyah"
               spellCheck="false"
               required
             />
           </li>
           <li
-            className="flex flex-col justify-center gap-2 mx-auto mb-2 px-2"
+            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2"
             data-aos="fade-left"
           >
             <label htmlFor="inputEmail">Email</label>
@@ -48,21 +48,21 @@ const Contact = () => {
               type="email"
               id="inputEmail"
               name="email"
-              className="bg-[#343434] text-white rounded-lg h-[36px] w-full focus:outline-0 p-2"
+              className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
               placeholder="luthpai.afr@gmail.com"
               spellCheck="false"
               required
             />
           </li>
           <li
-            className="flex flex-col justify-center gap-2 mx-auto px-2"
+            className="mx-auto flex flex-col justify-center gap-2 px-2"
             data-aos="fade-left"
           >
             <label htmlFor="inputMsg">Message</label>
             <textarea
               id="inputMsg"
               name="msg"
-              className="bg-[#343434] text-white rounded-lg h-[85px] w-full focus:outline-0 p-2 overflow-y-hidden"
+              className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
               maxLength={maxLength}
               spellCheck="false"
               required

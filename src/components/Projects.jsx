@@ -21,27 +21,27 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-[#272727] md:px-20 w-full h-fit py-12 flex flex-col lg:flx-row flex-nowrap justify-center items-center px-8 text-white gap-x-2 gap-y-2"
+      className="lg:flx-row flex h-fit w-full flex-col flex-nowrap items-center justify-center gap-x-2 gap-y-2 bg-[#272727] px-8 py-12 text-white md:px-20"
     >
       <h1
-        className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8"
+        className="mx-8 inline-block rounded-sm border-b-4 border-sky-600 pb-2 text-4xl font-bold"
         data-aos="fade-up"
       >
         Projects
       </h1>
-      <div className="flex justify-center items-center flex-col md:flex-row w-[95%] gap-3 py-6 flex-wrap mx-auto">
+      <div className="mx-auto flex w-[95%] flex-col flex-wrap items-center justify-center gap-3 py-6 md:flex-row">
         {projects.map((project) => {
           return (
             <div
-              className="p-5 bg-[#303030] w-[240px] md:w-[390px] shadow-lg rounded-lg custom-transition mx-auto"
+              className="custom-transition mx-auto w-[240px] rounded-lg bg-[#303030] p-5 shadow-lg md:w-[390px]"
               data-aos="flip-left"
             >
               {project.img !== "null" ? (
-                <img className="w-fit mb-2 mx-auto" alt="" src={project.img} />
+                <img className="mx-auto mb-2 w-fit" alt="" src={project.img} />
               ) : (
                 ""
               )}
-              <h1 className="text-xl mb-2 font-semibold" data-aos="fade-left">
+              <h1 className="mb-2 text-xl font-semibold" data-aos="fade-left">
                 {" "}
                 {project.title}{" "}
               </h1>
@@ -53,13 +53,13 @@ const Projects = () => {
                 {project.link !== "null" ? (
                   <a
                     href={project.link}
-                    className="small-btn w-fit mt-2 group"
+                    className="small-btn group mt-2 w-fit"
                     target="__blank"
                   >
                     Visit{" "}
                     <FontAwesomeIcon
                       icon={faPlane}
-                      className="group-hover:ml-2 custom-transition"
+                      className="custom-transition group-hover:ml-2"
                     />
                   </a>
                 ) : (
@@ -68,7 +68,7 @@ const Projects = () => {
                 {project.repo !== "null" ? (
                   <a
                     href={project.repo}
-                    className="small-btn w-fit mt-2 group"
+                    className="small-btn group mt-2 w-fit"
                     target="__blank"
                     onMouseEnter={hoverRepo}
                   >

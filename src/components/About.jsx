@@ -5,21 +5,21 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-fit py-12 bg-[#232323] text-gray-200 flex flex-col justify-center items-center box-border"
+      className="box-border flex h-fit w-full flex-col items-center justify-center bg-[#232323] py-12 text-gray-200"
     >
       <h1
-        className="text-4xl border-b-4 rounded-sm font-bold border-sky-600 pb-2 inline-block mx-8"
+        className="mx-8 inline-block rounded-sm border-b-4 border-sky-600 pb-2 text-4xl font-bold"
         data-aos="fade-up"
       >
         About
       </h1>
 
-      <div className="py-6 my-2 px-8" data-aos="fade-up">
-        <p className="text-lg w-[95%] lg:w-[80%] text-center mx-auto">
-          <h1 className="text-xl block text-center font-semibold mb-2">
+      <div className="my-2 px-8 py-6" data-aos="fade-up">
+        <p className="mx-auto w-[95%] text-center text-lg lg:w-[80%]">
+          <h1 className="mb-2 block text-center text-xl font-semibold">
             Hello There!
           </h1>
-          <div className="mb-2 mx-auto text-center md:w-[50%] flex flex-col gap-3">
+          <div className="mx-auto mb-2 flex flex-col gap-3 text-center md:w-[50%]">
             <span data-aos="fade-left">
               I'm Luthfi Afriansyah. I'm into web development, I can work with
               ReactJs, TailwindCSS for Frontend and NodeJs for Backend, I was
