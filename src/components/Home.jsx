@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      document.location.hash = "home";
+      history.pushState({}, "", "#home")
     }
   }, [isIntersecting]);
   return (

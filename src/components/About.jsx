@@ -19,7 +19,7 @@ const About = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      document.location.hash = "about";
+      history.pushState({}, "", "#about")
     }
   }, [isIntersecting]);
   return (

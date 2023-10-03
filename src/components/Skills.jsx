@@ -33,7 +33,7 @@ const Skills = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      document.location.hash = "skills";
+      history.pushState({}, "", "#skills")
     }
   }, [isIntersecting]);
   const techs = [
