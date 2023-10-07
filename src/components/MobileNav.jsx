@@ -68,7 +68,7 @@ text-3xl md:hidden"
           </li>
           <li
             onClick={navClick}
-            className="custom-transition absolute -left-6 top-[30vh] z-20 flex h-[45px] w-[45px] items-center justify-center rounded-full border-2 border-gray-500 bg-[#202020] p-3 text-3xl"
+            className="custom-transition absolute -left-6 top-[30vh] z-20 flex h-[45px] w-[45px] items-center justify-center rounded-full text-white border-2 border-gray-500 bg-[#202020] p-3 text-3xl"
           >
             <FontAwesomeIcon
               className="custom-transition text-4xl"
