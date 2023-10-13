@@ -22,7 +22,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#projects")
+      history.pushState({}, "", "#projects");
     }
   }, [isIntersecting]);
   const [repo, setRepo] = useState(false);

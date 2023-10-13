@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
       <Socials />
       <div className="flex w-full flex-col items-center gap-1 px-4 text-center text-sm">
-        <span className="flex w-full items-center justify-center gap-2 border-t-[1px] border-t-gray-800 pt-2">
+        <span className="flex w-full items-center justify-center gap-2 pt-1">
           Built with <FaHeart /> by Luthpai
         </span>
       </div>

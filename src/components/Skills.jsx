@@ -1,19 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaYarn,
-  FaGitAlt,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiNodedotjs,
-  SiNeovim,
-  SiVisualstudiocode,
-  SiManjaro,
+  SiPhp,
+  SiExpress,
+  SiBootstrap,
+  SiNextdotjs,
 } from "react-icons/si";
+import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 
 const Skills = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -33,24 +27,23 @@ const Skills = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#skills")
+      history.pushState({}, "", "#skills");
     }
   }, [isIntersecting]);
-  const techs = [
+  const langs = [
     { name: "HTML", ico: FaHtml5 },
     { name: "CSS", ico: FaCss3Alt },
-    { name: "Javascript", ico: FaJs },
-    { name: "Tailwind", ico: SiTailwindcss },
-    { name: "NodeJs", ico: SiNodedotjs },
-    { name: "React", ico: FaReact },
+    { name: "Javascript", ico: BiLogoJavascript },
+    { name: "Typescript", ico: BiLogoTypescript },
+    { name: "PHP", ico: SiPhp },
   ];
 
-  const tools = [
-    { name: "Manjaro Linux", ico: SiManjaro },
-    { name: "Neovim", ico: SiNeovim },
-    { name: "VSCode", ico: SiVisualstudiocode },
-    { name: "Yarn", ico: FaYarn },
-    { name: "Git", ico: FaGitAlt },
+  const fws = [
+    { name: "Tailwind", ico: SiTailwindcss },
+    { name: "Bootstrap", ico: SiBootstrap },
+    { name: "Next", ico: SiNextdotjs },
+    { name: "React", ico: FaReact },
+    { name: "Express", ico: SiExpress },
   ];
 
   return (
@@ -65,21 +58,21 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="custom-transition box-border flex flex-col items-center justify-center gap-4 md:flex-row md:items-stretch">
+      <div className="custom-transition box-border flex w-full flex-row items-center items-stretch justify-center gap-2 px-5 md:px-20">
         <div
           className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-left"
         >
-          <h1 className="mb-2 text-xl font-semibold">Techs & Languages </h1>
-          {techs.map((tech) => {
-            const Ico = tech.ico;
+          <h1 className="mb-2 text-xl font-semibold">Languages</h1>
+          {langs.map((lang) => {
+            const Ico = lang.ico;
             return (
               <div
-                className="border-box custom-transition flex items-center justify-center gap-3 p-3 "
+                className="border-box custom-transition flex items-center justify-center gap-3 px-2 py-3"
                 data-aos="fade-right"
               >
-                <Ico className="text-xl" />
-                <h1 className="md:text-lg">{tech.name}</h1>
+                <Ico className="text-[24px]" />
+                <h1 className="md:text-lg">{lang.name}</h1>
               </div>
             );
           })}
@@ -88,16 +81,16 @@ const Skills = () => {
           className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-right"
         >
-          <h1 className="mb-2 text-xl font-semibold">Tools</h1>
-          {tools.map((tool) => {
-            const Ico = tool.ico;
+          <h1 className="mb-2 text-xl font-semibold">Frameworks, etc.</h1>
+          {fws.map((item) => {
+            const Ico = item.ico;
             return (
               <div
-                className="border-box custom-transition flex items-center justify-center gap-3 p-3"
+                className="border-box custom-transition flex items-center justify-center gap-3 px-2 py-3"
                 data-aos="fade-right"
               >
-                <Ico className="text-xl" />
-                <h1 className="md:text-lg">{tool.name}</h1>
+                <Ico className="text-[24px]" />
+                <h1 className="md:text-lg">{item.name}</h1>
               </div>
             );
           })}

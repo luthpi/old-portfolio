@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#home")
+      history.pushState({}, "", "#home");
     }
   }, [isIntersecting]);
   return (

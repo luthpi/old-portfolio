@@ -26,8 +26,8 @@ text-3xl md:hidden"
         ref={ref}
         className={
           !nav
-            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start border-l-[2px] border-gray-500 bg-[#161616] pt-16 shadow-2xl md:hidden"
-            : "mnshadow fixed right-0 top-0 box-border flex h-[100vh] w-[50vw] flex-col items-center justify-start  border-l-[2px] border-gray-500 bg-[#161616] pt-16 md:hidden"
+            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-[100vh] w-[40vw] flex-col items-center justify-start border-l-[2px] border-gray-500 bg-[#161616] pt-9 shadow-2xl md:hidden"
+            : "mnshadow fixed right-0 top-0 box-border flex h-[100vh] w-[40vw] flex-col items-center justify-start  border-l-[2px] border-gray-500 bg-[#161616] pt-9 md:hidden"
         }
       >
         <ul className="flex flex-col items-start justify-center gap-3">
@@ -66,15 +66,6 @@ text-3xl md:hidden"
             <AiOutlineMail />
             <a href="#contact"> Contact</a>
           </li>
-          <li
-            onClick={navClick}
-            className="custom-transition absolute -left-6 top-[30vh] z-20 flex h-[45px] w-[45px] items-center justify-center rounded-full text-white border-2 border-gray-500 bg-[#202020] p-3 text-3xl"
-          >
-            <FontAwesomeIcon
-              className="custom-transition text-4xl"
-              icon={faClose}
-            />
-          </li>
         </ul>
       </div>
     </>
@@ -84,7 +75,6 @@ text-3xl md:hidden"
 function useOnClickOutside(ref, handler) {
   useEffect(() => {
     const listener = (event) => {
-      // Do nothing if clicking ref's element or descendent elements
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }

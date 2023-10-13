@@ -19,7 +19,7 @@ const About = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#about")
+      history.pushState({}, "", "#about");
     }
   }, [isIntersecting]);
   return (
@@ -37,15 +37,21 @@ const About = () => {
 
       <div className="my-2 px-4 py-6" data-aos="fade-up">
         <p className="mx-auto w-[95%] text-center text-[14px] md:text-lg lg:w-[80%]">
-          <h1 className="mb-2 block text-center text-xl font-semibold">
-            Hello There!
+          <h1
+            className="mb-2 block text-center text-2xl font-semibold"
+            data-aos="fade-left"
+          >
+            Hello There! 👋🏻
           </h1>
-          <div className="mx-auto mb-2 flex flex-col gap-3 text-center md:w-[75%]">
+          <div
+            className="mx-auto mb-2 flex flex-col gap-3 text-center text-lg md:w-[75%]"
+            data-aos="fade-right"
+          >
             <span>
               I'm Luthfi Afriansyah. I'm into web development, I can work with
-              ReactJs, TailwindCSS for Frontend and NodeJs for Backend, I was
-              born in May 2009. I started learning web development since I was
-              12.
+              React and Tailwind for frontend and Node with Express for backend,
+              I was born in May 2009. I started learning web development since I
+              was 12 years old.
             </span>
             <span>
               I have some soft skills, I can communicate in English, I'm a fast
@@ -53,7 +59,7 @@ const About = () => {
               I'm coding!
             </span>
             <span>
-              I have a GitHub page and an Instagram account! Check them out!
+              I have a GitHub account and an Instagram account! Check them out!
             </span>
             <span>
               <Socials />
