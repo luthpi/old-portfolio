@@ -5,6 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { AiOutlineFolderOpen, AiOutlineMail } from "react-icons/ai";
+import { BiSolidChevronsRight } from "react-icons/bi";
 
 const MobileNav = () => {
   const [nav, setNav] = useState(false);
@@ -26,47 +27,54 @@ text-3xl md:hidden"
         ref={ref}
         className={
           !nav
-            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-[100vh] w-[40vw] flex-col items-center justify-start border-l-[2px] border-gray-500 bg-[#161616] pt-9 shadow-2xl md:hidden"
-            : "mnshadow fixed right-0 top-0 box-border flex h-[100vh] w-[40vw] flex-col items-center justify-start  border-l-[2px] border-gray-500 bg-[#161616] pt-9 md:hidden"
+            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-fit w-[45vw] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-10 pt-6 shadow-2xl md:hidden"
+            : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-10 pt-6 md:hidden"
         }
       >
-        <ul className="flex flex-col items-start justify-center gap-3">
+        <ul className="flex flex-col items-start justify-center gap-[7px] text-lg">
           <li
             onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2 text-2xl hover:scale-110 hover:text-gray-300"
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
           >
             <AiOutlineHome />
             <a href="#home"> Home</a>
           </li>
           <li
             onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2 text-2xl hover:scale-110 hover:text-gray-300"
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
           >
             <BsPerson />
             <a href="#about"> About</a>
           </li>
           <li
             onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2 text-2xl hover:scale-110 hover:text-gray-300"
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
           >
             <HiOutlineComputerDesktop />
             <a href="#skills"> Skills</a>
           </li>
           <li
             onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2 text-2xl hover:scale-110 hover:text-gray-300"
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
           >
             <AiOutlineFolderOpen />
             <a href="#projects"> Projects</a>
           </li>
           <li
             onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2 text-2xl hover:scale-110 hover:text-gray-300"
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
           >
             <AiOutlineMail />
             <a href="#contact"> Contact</a>
           </li>
         </ul>
+        <button
+          aria-label="button"
+          onClick={navClick}
+          className="absolute -bottom-5 w-fit rounded-full border-[2px] border-gray-400 bg-[#202020] p-2 text-xl"
+        >
+          <BiSolidChevronsRight />
+        </button>
       </div>
     </>
   );

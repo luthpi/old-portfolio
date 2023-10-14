@@ -44,7 +44,7 @@ const About = () => {
             Hello There! 👋🏻
           </h1>
           <div
-            className="mx-auto mb-2 flex flex-col gap-3 text-center text-lg md:w-[75%]"
+            className="mx-auto mb-2 flex flex-col gap-3 text-center text-[15px] md:w-[75%] md:text-lg"
             data-aos="fade-right"
           >
             <span>
@@ -54,9 +54,8 @@ const About = () => {
               was 12 years old.
             </span>
             <span>
-              I have some soft skills, I can communicate in English, I'm a fast
-              learner, I can solve problems quickly, I always be energetic when
-              I'm coding!
+              I have intermediate level of English, I'm a fast learner, I can
+              solve problems quickly, I always be energetic when I'm coding!
             </span>
             <span>
               I have a GitHub account and an Instagram account! Check them out!

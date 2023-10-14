@@ -29,7 +29,7 @@ const Home = () => {
     <div
       id="home"
       ref={home}
-      className="custom-transition box-border h-[100vh] w-full bg-[#202020]"
+      className="custom-transition box-border h-[90vh] w-full bg-[#202020]"
     >
       <div className="custom-transition mx-auto flex h-full max-w-[1000px] flex-col items-center justify-center px-8 text-white md:px-20">
         <img

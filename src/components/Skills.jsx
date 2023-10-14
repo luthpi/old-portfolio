@@ -30,6 +30,7 @@ const Skills = () => {
       history.pushState({}, "", "#skills");
     }
   }, [isIntersecting]);
+
   const langs = [
     { name: "HTML", ico: FaHtml5 },
     { name: "CSS", ico: FaCss3Alt },
@@ -63,7 +64,9 @@ const Skills = () => {
           className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-left"
         >
-          <h1 className="mb-2 text-xl font-semibold">Languages</h1>
+          <h1 className="mb-2 text-[17px] font-semibold md:text-lg">
+            Languages
+          </h1>
           {langs.map((lang) => {
             const Ico = lang.ico;
             return (
@@ -81,7 +84,9 @@ const Skills = () => {
           className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-right"
         >
-          <h1 className="mb-2 text-xl font-semibold">Frameworks, etc.</h1>
+          <h1 className="mb-2 text-[17px] font-semibold md:text-lg">
+            Frameworks, etc.
+          </h1>
           {fws.map((item) => {
             const Ico = item.ico;
             return (
