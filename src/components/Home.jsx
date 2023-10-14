@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import { AiOutlineFolderOpen } from "react-icons/ai";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import unbg from "../../assets/img/unbg2.png";
 import "animate.css";
 
@@ -46,14 +48,15 @@ const Home = () => {
         <p className="custom-transition animate__animated animate__fadeInUp animate__fast my-3 mt-1 max-w-[700px] text-center text-sm text-[#b7c5ce] md:text-lg lg:text-xl">
           I'm a junior high school student who loves programming
         </p>
-        <div className="animate__animated animate__fadeInRight animate__fast flex flex-wrap">
+        <div className="animate__animated animate__fadeInRight animate__fast flex flex-wrap gap-2">
           <a href="#projects" className="btn group">
-            My Projects!
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="custom-transition group-hover:ml-2"
-            />
+            Projects
+            <AiOutlineFolderOpen className="custom-transition group-hover:ml-2" />
           </a>
+          <Link to="/blog" className="btn group">
+            Blog
+            <IoDocumentTextOutline className="custom-transition group-hover:ml-2" />
+          </Link>
         </div>
       </div>
     </div>

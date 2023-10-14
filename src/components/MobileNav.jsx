@@ -16,8 +16,8 @@ const MobileNav = () => {
     <>
       <div
         id="hamburger"
-        className="custom-transition cursor-pointer
-text-3xl md:hidden"
+        className="custom-transition animate__animated
+animate__fadeInRight animate__faster cursor-pointer text-3xl md:hidden"
         onClick={navClick}
       >
         <FontAwesomeIcon className="custom-transition" icon={faBars} />
@@ -31,7 +31,7 @@ text-3xl md:hidden"
             : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-10 pt-6 md:hidden"
         }
       >
-        <ul className="flex flex-col items-start justify-center gap-[7px] text-lg">
+        <ul className="flex flex-col items-start justify-center gap-[9px] text-[20px]">
           <li
             onClick={navClick}
             className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"

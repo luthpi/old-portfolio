@@ -1,12 +1,7 @@
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import UpButton from "./components/UpButton";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Blog from "./pages/Blog";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,19 +11,12 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <>
-      <Navbar />
-
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-
-      <UpButton />
-
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
   );
 }
 

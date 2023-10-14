@@ -7,12 +7,12 @@ const WideNavbar = () => {
     <>
       <a
         href="./"
-        className="flex items-center gap-1 overflow-hidden text-xl font-bold tracking-widest text-sky-400"
+        className="animate__animated animate__fadeInLeft animate__faster flex items-center gap-1 overflow-hidden text-xl font-bold tracking-widest text-sky-400"
       >
         <img src={logo} alt="My Logo" className="box-border w-[48px] p-1" />
         <span>Luthpai</span>
       </a>
-      <ul className="jusify-end hidden h-full items-center gap-4 text-[15px] font-semibold uppercase md:flex">
+      <ul className="jusify-end animate__animated animate__fadeInRight animate__faster hidden h-full items-center gap-4 text-[15px] font-semibold uppercase md:flex">
         <li className="liFunc" id="liHome">
           <a href="#home"> Home</a>
         </li>
