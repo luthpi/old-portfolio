@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 let options = { onscroll: true };
 
 const WideNavbar = () => {
@@ -27,6 +28,9 @@ const WideNavbar = () => {
         </li>
         <li className="liFunc" id="liContact">
           <a href="#contact"> Contact</a>
+        </li>
+        <li className="liFunc" id="liBlog">
+          <Link to="/blog"> Blog</Link>
         </li>
       </ul>
     </>

@@ -5,7 +5,9 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { AiOutlineFolderOpen, AiOutlineMail } from "react-icons/ai";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import { BiSolidChevronsRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   const [nav, setNav] = useState(false);
@@ -66,6 +68,13 @@ animate__fadeInRight animate__faster cursor-pointer text-3xl md:hidden"
           >
             <AiOutlineMail />
             <a href="#contact"> Contact</a>
+          </li>
+          <li
+            onClick={navClick}
+            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
+          >
+            <IoDocumentTextOutline />
+            <Link to="/blog"> Blog</Link>
           </li>
         </ul>
         <button

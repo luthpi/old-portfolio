@@ -7,5 +7,5 @@ window.onload = () => {
     const loader = document.getElementById("preload");
     loader.style.display = "none";
     loader.removeAttribute("class");
-  }, 500);
+  }, 300);
 };

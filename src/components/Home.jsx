@@ -42,13 +42,13 @@ const Home = () => {
         <h1 className="custom-transition animate__animated animate__fadeInLeft animate__faster mt-3 text-3xl  font-semibold text-[#eaeaea] md:text-4xl lg:text-5xl">
           I'm <strong className="font-bold text-cyan-500">Luthpai</strong>
         </h1>
-        <h1 className="custom-transition animate__animated animate__fadeInUp animate__fast mt-2 text-center text-lg font-semibold text-[#b7c5ce] md:text-xl lg:text-2xl">
+        <h1 className="custom-transition animate__animated animate__fadeInUp animate__faster mt-2 text-center text-lg font-semibold text-[#b7c5ce] md:text-xl lg:text-2xl">
           A Junior High School Student
         </h1>
-        <p className="custom-transition animate__animated animate__fadeInUp animate__fast my-3 mt-1 max-w-[700px] text-center text-sm text-[#b7c5ce] md:text-lg lg:text-xl">
+        <p className="custom-transition animate__animated animate__fadeInUp animate__faster my-3 mt-1 max-w-[700px] text-center text-sm text-[#b7c5ce] md:text-lg lg:text-xl">
           I'm a junior high school student who loves programming
         </p>
-        <div className="animate__animated animate__fadeInRight animate__fast flex flex-wrap gap-2">
+        <div className="animate__animated animate__fadeInRight animate__faster flex flex-wrap gap-2">
           <a href="#projects" className="btn group">
             Projects
             <AiOutlineFolderOpen className="custom-transition group-hover:ml-2" />
