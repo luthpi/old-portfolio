@@ -51,11 +51,11 @@ const Home = () => {
         <div className="animate__animated animate__fadeInRight animate__faster flex flex-wrap gap-2">
           <a href="#projects" className="btn group">
             Projects
-            <AiOutlineFolderOpen className="custom-transition group-hover:ml-2" />
+            <AiOutlineFolderOpen className="custom-transition text-xl group-hover:ml-2" />
           </a>
           <Link to="/blog" className="btn group">
             Blog
-            <IoDocumentTextOutline className="custom-transition group-hover:ml-2" />
+            <IoDocumentTextOutline className="custom-transition text-xl group-hover:ml-2" />
           </Link>
         </div>
       </div>

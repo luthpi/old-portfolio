@@ -2,7 +2,7 @@
 
 My portfolio, built with React, Axios, React Router and Tailwind. Bundled by Vite
 
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=luthpai&style=for-the-badge) 
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=luthpai&style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
 ## Frameworks and Libraries
