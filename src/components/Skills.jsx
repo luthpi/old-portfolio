@@ -43,10 +43,9 @@ const Skills = () => {
   const fws = [
     { name: "SASS", ico: SiSass },
     { name: "Tailwind", ico: SiTailwindcss },
-    { name: "Bootstrap", ico: SiBootstrap },
-    { name: "Next", ico: SiNextdotjs },
     { name: "React", ico: FaReact },
     { name: "Vue", ico: SiVuedotjs },
+    { name: "Next", ico: SiNextdotjs },
   ];
 
   return (
