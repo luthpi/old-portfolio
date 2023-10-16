@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import {
+  SiSass,
   SiTailwindcss,
   SiPhp,
-  SiExpress,
-  SiBootstrap,
   SiNextdotjs,
+  SiBootstrap,
+  SiVuedotjs,
 } from "react-icons/si";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 
@@ -40,11 +41,12 @@ const Skills = () => {
   ];
 
   const fws = [
+    { name: "SASS", ico: SiSass },
     { name: "Tailwind", ico: SiTailwindcss },
     { name: "Bootstrap", ico: SiBootstrap },
     { name: "Next", ico: SiNextdotjs },
     { name: "React", ico: FaReact },
-    { name: "Express", ico: SiExpress },
+    { name: "Vue", ico: SiVuedotjs },
   ];
 
   return (

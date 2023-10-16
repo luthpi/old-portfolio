@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Blog from "./pages/Blog";
-import NotFound  from './pages/404';
+import NotFound from "./pages/404";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

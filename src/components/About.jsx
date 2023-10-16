@@ -36,7 +36,7 @@ const About = () => {
       </h1>
 
       <div className="my-2 px-4 py-6" data-aos="fade-up">
-        <p className="mx-auto w-[95%] text-center text-[14px] md:text-lg lg:w-[80%]">
+        <div className="mx-auto w-[95%] text-center text-[14px] md:text-lg lg:w-[80%]">
           <h1
             className="mb-2 block text-center text-2xl font-semibold"
             data-aos="fade-left"
@@ -64,7 +64,7 @@ const About = () => {
               <Socials />
             </span>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );

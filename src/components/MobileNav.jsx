@@ -29,8 +29,8 @@ animate__fadeInRight animate__faster cursor-pointer text-3xl md:hidden"
         ref={ref}
         className={
           !nav
-            ? "mnshadow fixed -right-[100vh] top-0 box-border flex h-fit w-[45vw] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-10 pt-6 shadow-2xl md:hidden"
-            : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-10 pt-6 md:hidden"
+            ? "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-x-full flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 shadow-2xl md:hidden"
+            : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-x-0 flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 md:hidden"
         }
       >
         <ul className="flex flex-col items-start justify-center gap-[9px] text-[20px]">

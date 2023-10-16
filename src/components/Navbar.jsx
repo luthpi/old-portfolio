@@ -1,15 +1,7 @@
 import React, { useEffect } from "react";
-import { onscroll } from "../onscroll";
 import MobileNav from "./MobileNav";
-import { WideNavbar, options } from "./WideNavbar";
-
+import WideNavbar from "./WideNavbar";
 const Navbar = () => {
-  useEffect(() => {
-    if (options.onscroll) {
-      onscroll();
-    }
-  }, []);
-
   return (
     <div
       id="navbar"

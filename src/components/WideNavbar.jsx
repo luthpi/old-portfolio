@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-let options = { onscroll: true };
 
 const WideNavbar = () => {
   return (
@@ -37,4 +36,4 @@ const WideNavbar = () => {
   );
 };
 
-export { WideNavbar, options };
+export default WideNavbar;
