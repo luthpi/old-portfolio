@@ -39,7 +39,7 @@ const Blog = () => {
                 </span>
               </span>
               <div className="ml-2 flex items-center gap-2">
-                Written By :
+                By :
                 <span className="text-sm">
                   {post.user.name}{" "}
                   <span className="text-sm font-extralight text-gray-400">
