@@ -44,8 +44,7 @@ const Skills = () => {
     { name: "SASS", ico: SiSass },
     { name: "Tailwind", ico: SiTailwindcss },
     { name: "React", ico: FaReact },
-    { name: "Vue", ico: SiVuedotjs },
-    { name: "Next", ico: SiNextdotjs },
+    { name: "Vue", ico: SiVuedotjs }
   ];
 
   return (
