@@ -24,7 +24,7 @@ const Home = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "");
+      history.pushState({}, "", "/");
     }
   }, [isIntersecting]);
   return (

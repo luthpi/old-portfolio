@@ -1,11 +1,10 @@
 window.onload = () => {
-  setTimeout(function load() {
-    const loader = document.getElementById("preload");
-    loader.style.opacity = "0";
-  }, 200);
-  setTimeout(function afterLoad() {
-    const loader = document.getElementById("preload");
-    loader.style.display = "none";
-    loader.removeAttribute("class");
-  }, 300);
+  setTimeout(() => {
+    let e = document.getElementById("preload");
+    e.style.opacity = "0";
+  }, 400),
+    setTimeout(() => {
+      let e = document.getElementById("preload");
+      (e.style.display = "none"), e.removeAttribute("class");
+    }, 800);
 };

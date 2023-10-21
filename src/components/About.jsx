@@ -44,26 +44,21 @@ const About = () => {
             Hello There! 👋🏻
           </h1>
           <div
-            className="mx-auto mb-2 flex flex-col gap-3 text-center text-[15px] md:w-[75%] md:text-lg"
+            className="mx-auto bg-[#303030] mb-2 flex w-fit flex-col gap-3 px-5 py-4 text-[15px] text-left md:w-[75%] md:text-lg rounded-xl"
             data-aos="fade-right"
           >
             <span>
-              I'm Luthfi Afriansyah. I'm into web development, I can work with
-              React and Tailwind for frontend and Node with Express for backend,
-              I was born in May 2009. I started learning web development since I
-              was 12 years old.
+              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development, especially front end. I can work with React or Vue with Tailwind, I can use frameworks like Next or Nuxt. I love Tailwind so much, I haven't built something with another CSS framework.
             </span>
             <span>
-              I have intermediate level of English, I'm a fast learner, I can
-              solve problems quickly, I always be energetic when I'm coding!
+              I was born in May 2009. I started learning about web development since I was 12. My dad handed me keyboard and mouse when I was 4, so I think that's why I love coding.
             </span>
             <span>
-              I have a GitHub account and an Instagram account! Check them out!
+              I have intermediate level of English, I'm a fast learner, I can solve problems quickly, I always be energetic when I'm coding!
             </span>
-            <span>
-              <Socials />
-            </span>
+            <span>I have a GitHub and Instagram account! Check them out!</span>
           </div>
+          <Socials />
         </div>
       </div>
     </div>

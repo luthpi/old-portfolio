@@ -31,7 +31,6 @@ const Skills = () => {
       history.pushState({}, "", "#skills");
     }
   }, [isIntersecting]);
-
   const langs = [
     { name: "HTML", ico: FaHtml5 },
     { name: "CSS", ico: FaCss3Alt },
@@ -44,7 +43,7 @@ const Skills = () => {
     { name: "SASS", ico: SiSass },
     { name: "Tailwind", ico: SiTailwindcss },
     { name: "React", ico: FaReact },
-    { name: "Vue", ico: SiVuedotjs }
+    { name: "Vue", ico: SiVuedotjs },
   ];
 
   return (
@@ -59,9 +58,9 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="custom-transition box-border flex w-full flex-row items-center items-stretch justify-center gap-2 px-5 md:px-20">
+      <div className="custom-transition box-border flex w-full flex-row items-start justify-center gap-2 px-5 md:items-stretch md:px-20">
         <div
-          className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
+          className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start justify-stretch rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-left"
         >
           <h1 className="mb-2 text-[17px] font-semibold md:text-lg">
@@ -81,7 +80,7 @@ const Skills = () => {
           })}
         </div>
         <div
-          className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
+          className="custom-transition mt-3 flex w-full flex-col flex-wrap items-start justify-stretch rounded-lg bg-[#343434] px-4 py-3 shadow-lg md:w-fit"
           data-aos="flip-right"
         >
           <h1 className="mb-2 text-[17px] font-semibold md:text-lg">
