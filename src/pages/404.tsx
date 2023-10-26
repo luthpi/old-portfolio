@@ -1,3 +1,5 @@
+import React from 'react'
+
 const NotFound = () => {
   return (
     <div className="flex h-[90vh] w-[100vw] flex-col items-center justify-center gap-3 text-center text-white md:flex-row">

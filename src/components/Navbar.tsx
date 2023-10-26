@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MobileNav from "./MobileNav";
 import WideNavbar from "./WideNavbar";
 const Navbar = () => {

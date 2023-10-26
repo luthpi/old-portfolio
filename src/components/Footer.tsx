@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import Socials from "./Socials";
-import { GiCoffeeCup } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {

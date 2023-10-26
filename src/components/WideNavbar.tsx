@@ -7,7 +7,7 @@ const WideNavbar = () => {
     <>
       <a
         href="./"
-        className="animate__animated animate__fadeInLeft animate__faster flex items-center gap-1 overflow-hidden text-xl font-bold tracking-widest text-sky-400"
+        className="flex items-center gap-1 overflow-hidden text-xl font-bold tracking-widest text-sky-400"
       >
         <img src={logo} alt="My Logo" className="box-border w-[48px] p-1" />
         <span>Luthpai</span>

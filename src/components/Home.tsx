@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineFolderOpen } from "react-icons/ai";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import unbg from "../../assets/img/unbg2.png";
 import "animate.css";

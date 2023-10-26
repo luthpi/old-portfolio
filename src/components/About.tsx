@@ -19,7 +19,7 @@ const About = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#about");
+      history.pushState({}, "", "/about");
     }
   }, [isIntersecting]);
   return (
@@ -48,10 +48,10 @@ const About = () => {
             data-aos="fade-right"
           >
             <span>
-              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development, especially front end. I can work with React or Vue with Tailwind, I can use frameworks like Next or Nuxt. I love Tailwind so much, I haven't built something with another CSS framework.
+              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development, especially front end. I can work with React or Vue with Tailwind, I can use frameworks like Next or Nuxt.
             </span>
             <span>
-              I was born in May 2009. I started learning about web development since I was 12. My dad handed me keyboard and mouse when I was 4, so I think that's why I love coding.
+              I was born in May 2009. I started learning about web development since I was 12. My dad handed me keyboard and mouse when I was 4.
             </span>
             <span>
               I have intermediate level of English, I'm a fast learner, I can solve problems quickly, I always be energetic when I'm coding!

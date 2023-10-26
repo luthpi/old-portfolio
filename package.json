@@ -5,25 +5,27 @@
   "author": "Luthfi Afriansyah <luthpai.afr@gmail.com>",
   "scripts": {
     "pretty": "prettier --write .",
-    "dev": "vite --port 1234",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 1234"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "autoprefixer": "^10.4.12",
     "axios": "^1.5.1",
-    "postcss": "^8.4.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.16.0",
-    "tailwindcss": "^3.1.8"
+    "typescript": "^5.2.2"
   },
   "browserslist": {
     "production": [
@@ -38,9 +40,20 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.5",
     "vite": "^3.1.0"
   }
 }

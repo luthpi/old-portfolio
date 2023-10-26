@@ -22,7 +22,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#projects");
+      history.pushState({}, "", "/projects");
     }
   }, [isIntersecting]);
   const [repo, setRepo] = useState(false);
@@ -30,6 +30,7 @@ const Projects = () => {
 
   const projectsData = [
     {
+      id: 1,
       img: "null",
       title: "Oops!",
       description: "There is no project yet",
@@ -56,6 +57,7 @@ const Projects = () => {
             <div
               className="custom-transition mx-auto w-[240px] rounded-lg bg-[#303030] p-5 shadow-lg md:w-[390px]"
               data-aos="flip-left"
+              key={project.id}
             >
               {project.img !== "null" ? (
                 <img className="mx-auto mb-2 w-fit" alt="" src={project.img} />

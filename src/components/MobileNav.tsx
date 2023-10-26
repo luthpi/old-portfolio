@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
@@ -18,8 +18,7 @@ const MobileNav = () => {
     <>
       <div
         id="hamburger"
-        className="custom-transition animate__animated
-animate__fadeInRight animate__faster cursor-pointer text-3xl md:hidden"
+        className="cursor-pointer text-3xl md:hidden"
         onClick={navClick}
       >
         <FontAwesomeIcon className="custom-transition" icon={faBars} />

@@ -1,7 +1,7 @@
 export const onscroll = () => {
   let lastScrollTop = 0;
   window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const navbar = document.getElementById("navbar");
     if (navbar) {
       if (scrollTop > lastScrollTop) {

@@ -4,7 +4,6 @@ import {
   SiSass,
   SiTailwindcss,
   SiPhp,
-  SiNextdotjs,
   SiBootstrap,
   SiVuedotjs,
 } from "react-icons/si";
@@ -28,22 +27,29 @@ const Skills = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "#skills");
+      history.pushState({}, "", "/skills");
     }
   }, [isIntersecting]);
-  const langs = [
-    { name: "HTML", ico: FaHtml5 },
-    { name: "CSS", ico: FaCss3Alt },
-    { name: "Javascript", ico: BiLogoJavascript },
-    { name: "Typescript", ico: BiLogoTypescript },
-    { name: "PHP", ico: SiPhp },
+  
+  interface item {
+    id: number, name: string,
+    ico: SVGElement
+  }
+  
+  const langs: item[] = [
+    { id: 1, name: "HTML", ico: FaHtml5 },
+    { id: 2, name: "CSS", ico: FaCss3Alt },
+    { id: 3, name: "Javascript", ico: BiLogoJavascript },
+    { id: 4, name: "Typescript", ico: BiLogoTypescript },
+    { id: 5, name: "PHP", ico: SiPhp },
   ];
 
-  const fws = [
-    { name: "SASS", ico: SiSass },
-    { name: "Tailwind", ico: SiTailwindcss },
-    { name: "React", ico: FaReact },
-    { name: "Vue", ico: SiVuedotjs },
+  const fws: item[] = [
+    { id: 1, name: "SASS", ico: SiSass },
+    { id: 2, name: "Bootstrap", ico: SiBootstrap },
+    { id: 3, name: "Tailwind", ico: SiTailwindcss },
+    { id: 4, name: "React", ico: FaReact },
+    { id: 5, name: "Vue", ico: SiVuedotjs },
   ];
 
   return (
@@ -67,11 +73,12 @@ const Skills = () => {
             Languages
           </h1>
           {langs.map((lang) => {
-            const Ico = lang.ico;
+            const Ico: React.ReactElement = lang.ico;
             return (
               <div
                 className="border-box custom-transition flex items-center justify-center gap-3 px-2 py-3"
                 data-aos="fade-right"
+                key={lang.key}
               >
                 <Ico className="text-[24px]" />
                 <h1 className="md:text-lg">{lang.name}</h1>
@@ -87,9 +94,10 @@ const Skills = () => {
             Frameworks, etc.
           </h1>
           {fws.map((item) => {
-            const Ico = item.ico;
+            const Ico: React.ReactElement = item.ico;
             return (
               <div
+                key={item.key}
                 className="border-box custom-transition flex items-center justify-center gap-3 px-2 py-3"
                 data-aos="fade-right"
               >
