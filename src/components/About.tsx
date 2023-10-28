@@ -19,7 +19,7 @@ const About = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "/about");
+      history.pushState({}, "", "#about");
     }
   }, [isIntersecting]);
   return (
@@ -44,17 +44,22 @@ const About = () => {
             Hello There! 👋🏻
           </h1>
           <div
-            className="mx-auto bg-[#303030] mb-2 flex w-fit flex-col gap-3 px-5 py-4 text-[15px] text-left md:w-[75%] md:text-lg rounded-xl"
+            className="mx-auto mb-2 flex w-fit flex-col gap-3 rounded-xl bg-[#303030] px-5 py-4 text-left text-[15px] md:w-[75%] md:text-lg"
             data-aos="fade-right"
           >
             <span>
-              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development, especially front end. I can work with React or Vue with Tailwind, I can use frameworks like Next or Nuxt.
+              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development,
+              especially front end. I can work with React or Vue with Tailwind,
+              I can use frameworks like Next or Nuxt.
             </span>
             <span>
-              I was born in May 2009. I started learning about web development since I was 12. My dad handed me keyboard and mouse when I was 4.
+              I was born in May 2009. I started learning about web development
+              since I was 12. My dad handed me keyboard and mouse when I was 4.
+              I also use Linux, although I'm a distro hooper.
             </span>
             <span>
-              I have intermediate level of English, I'm a fast learner, I can solve problems quickly, I always be energetic when I'm coding!
+              I have intermediate level of English, I'm a fast learner, I can
+              solve problems quickly, I always be energetic when I'm coding!
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>
           </div>

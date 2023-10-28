@@ -1,0 +1,11 @@
+public/
+manifest/
+vite.config.ts
+vercel.json
+tailwind.config.cjs
+postcss.config.cjs
+tsconfig.json
+README.md
+index.html
+.prettierrc
+.eslintrc.yml

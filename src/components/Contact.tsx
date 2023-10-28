@@ -19,7 +19,7 @@ const Contact = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      history.pushState({}, "", "/contact");
+      history.pushState({}, "", "#contact");
     }
   }, [isIntersecting]);
 

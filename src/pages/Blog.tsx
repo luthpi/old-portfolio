@@ -7,21 +7,21 @@ const url = "https://dev.to/api/articles?username=luthpai";
 
 const Blog = () => {
   interface IPost {
-    id: number,
-    title: string,
-    tag_list: string[] | null,
-    readable_publish_date: string,
-    user: object,
-    url: string
+    id: number;
+    title: string;
+    tag_list: string[] | null;
+    readable_publish_date: string;
+    user: object;
+    url: string;
   }
-  
+
   const [posts, setPosts] = useState<IPost[]>([]);
 
   useEffect(() => {
     axios.get(url).then((res) => setPosts(res.data));
   }, []);
   if (!posts) {
-    return null
+    return null;
   } else {
     return (
       <main className="flex w-full flex-col items-center gap-6 px-5 py-5 text-white md:px-20">
@@ -37,7 +37,10 @@ const Blog = () => {
                 <div className=" flex flex-row gap-1">
                   {post.tag_list.map((tag) => {
                     return (
-                      <span className=" rounded-full bg-[#303030] px-3 py-1 text-[14px] md:text-[16px]" key={post.id}>
+                      <span
+                        className=" rounded-full bg-[#303030] px-3 py-1 text-[14px] md:text-[16px]"
+                        key={post.id}
+                      >
                         {tag}
                       </span>
                     );
@@ -61,7 +64,8 @@ const Blog = () => {
                 <a
                   target="_blank"
                   href={post.url}
-                  className="btn mt-1 w-fit text-xl" rel="noreferrer"
+                  className="btn mt-1 w-fit text-xl"
+                  rel="noreferrer"
                 >
                   Read on
                   <FaDev className="custom-transition text-xl" />
