@@ -29,14 +29,14 @@ const Projects = () => {
   const hoverRepo = () => setRepo(!repo);
 
   interface project {
-    id: number,
-    img: string | null,
-    title: string,
-    description: string,
-    link: string | null,
-    repo: string | null
+    id: number;
+    img: string | null;
+    title: string;
+    description: string;
+    link: string | null;
+    repo: string | null;
   }
-  
+
   const projectsData: project[] = [
     {
       id: 1,
@@ -45,7 +45,7 @@ const Projects = () => {
       description: "There is no project yet",
       link: null,
       repo: null,
-    }
+    },
   ];
 
   return (
@@ -64,23 +64,21 @@ const Projects = () => {
         {projectsData.map((project) => {
           return (
             <div
-              className="custom-transition w-[80vw] rounded-lg bg-[#303030] py-2 px-4 shadow-lg md:w-[40%]"
+              className="custom-transition w-[80vw] rounded-lg bg-[#303030] px-4 py-2 shadow-lg md:w-[40%]"
               data-aos="flip-left"
               key={project.id}
             >
               {project.img !== null ? (
-                <img className="mx-auto rounded-lg w-fit" alt="" src={project.img} />
+                <img
+                  className="mx-auto w-fit rounded-lg"
+                  alt=""
+                  src={project.img}
+                />
               ) : (
                 ""
               )}
-              <h1 className="text-xl mt-2 font-semibold">
-                {" "}
-                {project.title}{" "}
-              </h1>
-              <p className="mb-2">
-                {" "}
-                {project.description}{" "}
-              </p>
+              <h1 className="mt-2 text-xl font-semibold"> {project.title} </h1>
+              <p className="mb-2"> {project.description} </p>
               <span className="flex gap-2">
                 {project.link !== null ? (
                   <a

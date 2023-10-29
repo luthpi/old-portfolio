@@ -2,9 +2,9 @@ import React from "react";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Socials = () => {
+const Socials = (props: object) => {
   return (
-    <div data-aos="fade-up">
+    <div data-aos={props.aos ? props.aos : ""}>
       <span className="mx-auto my-3 flex flex-wrap items-center justify-center gap-2">
         <a
           href="https://instagram.com/luthpai"

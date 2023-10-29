@@ -41,41 +41,35 @@ const Contact = () => {
         className="mx-auto mt-8 md:w-[70%]"
         data-aos="fade-up"
       >
-        <ul className="mx-auto px-4 flex flex-col gap-1 items-start">
-          <li
-            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2 w-full"
-          >
+        <ul className="mx-auto flex flex-col items-start gap-1 px-4">
+          <li className="mx-auto mb-2 flex w-full flex-col justify-center gap-2 px-2">
             <input
               type="text"
               variant="outlined"
               id="inputName"
               name="name"
-              className="h-[40px] w-full rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
+              className="h-[40px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
               placeholder="Full Name"
               spellCheck="false"
               required
             />
           </li>
-          <li
-            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2 w-full"
-          >
+          <li className="mx-auto mb-2 flex w-full flex-col justify-center gap-2 px-2">
             <input
               type="email"
               id="inputEmail"
               name="email"
-              className="h-[40px] w-full rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
+              className="h-[40px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
               placeholder="Email"
               spellCheck="false"
               required
             />
           </li>
-          <li
-            className="mx-auto flex flex-col justify-center gap-2 px-2 w-full"
-          >
+          <li className="mx-auto flex w-full flex-col justify-center gap-2 px-2">
             <textarea
               id="inputMsg"
               name="msg"
-              className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
+              className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
               spellCheck="false"
               required
               placeholder="Message"
@@ -87,7 +81,6 @@ const Contact = () => {
             </button>
           </li>
         </ul>
-        
       </form>
       {
         (window.onbeforeunload = () => {

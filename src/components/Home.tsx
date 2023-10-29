@@ -7,12 +7,12 @@ import unbg from "../../assets/img/unbg2.png";
 const Home = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const home = useRef(null);
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+
   const blogHandle = () => {
-    window.scrollTo(0,0)
-    navigate("blog")
-  }
+    window.scrollTo(0, 0);
+    navigate("blog");
+  };
 
   useEffect(() => {
     const homeObserver = new IntersectionObserver(

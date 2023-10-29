@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Routes from "react-slide-routes"
+import Routes from "react-slide-routes";
 import Homepage from "./pages/Homepage";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/404";
