@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import axios from "axios";
 import { FaDev } from "react-icons/fa";
+import "animate.css"
 
 const url = "https://dev.to/api/articles?username=luthpai";
 
@@ -31,7 +32,7 @@ const Blog = () => {
             return (
               <div
                 key={post.id}
-                className="animate__animated animate__fadeInRight animate__faster flex w-full flex-col gap-2 rounded-xl bg-[#242424] px-5 py-4 text-white shadow-xl md:w-[45%]"
+                className="flex w-full flex-col gap-2 rounded-xl bg-[#242424] px-5 py-4 text-white shadow-xl md:w-[45%] animate__animated animate__fadeInLeft animate__faster"
               >
                 <h1 className=" text-xl font-bold">{post.title}</h1>
                 <div className=" flex flex-row gap-1">

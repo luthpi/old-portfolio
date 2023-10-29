@@ -39,58 +39,55 @@ const Contact = () => {
         action="https://formspree.io/f/xjvzobrn"
         method="post"
         className="mx-auto mt-8 md:w-[70%]"
+        data-aos="fade-up"
       >
-        <ul className="mx-auto px-4">
+        <ul className="mx-auto px-4 flex flex-col gap-1 items-start">
           <li
-            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2"
-            data-aos="fade-left"
+            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2 w-full"
           >
-            <label htmlFor="inputName">Name</label>
             <input
               type="text"
+              variant="outlined"
               id="inputName"
               name="name"
-              className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
-              placeholder="M Luthfi Afriansyah"
+              className="h-[40px] w-full rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
+              placeholder="Full Name"
               spellCheck="false"
               required
             />
           </li>
           <li
-            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2"
-            data-aos="fade-left"
+            className="mx-auto mb-2 flex flex-col justify-center gap-2 px-2 w-full"
           >
-            <label htmlFor="inputEmail">Email</label>
             <input
               type="email"
               id="inputEmail"
               name="email"
-              className="h-[36px] w-full rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
-              placeholder="luthpai.afr@gmail.com"
+              className="h-[40px] w-full rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
+              placeholder="Email"
               spellCheck="false"
               required
             />
           </li>
           <li
-            className="mx-auto flex flex-col justify-center gap-2 px-2"
-            data-aos="fade-left"
+            className="mx-auto flex flex-col justify-center gap-2 px-2 w-full"
           >
-            <label htmlFor="inputMsg">Message</label>
             <textarea
               id="inputMsg"
               name="msg"
-              className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] p-2 text-white focus:outline-0"
+              className="h-[85px] w-full overflow-y-hidden rounded-lg bg-[#343434] py-2 px-3 text-white focus:outline-0"
               spellCheck="false"
               required
-              placeholder="This form is working. Do not spam please!"
+              placeholder="Message"
             ></textarea>
           </li>
-          <li className="mx-auto px-2" data-aos="flip-left">
+          <li className="px-2">
             <button type="submit" className="btn custom-transition mt-3">
               Send <FaEnvelope className="custom-transition" />
             </button>
           </li>
         </ul>
+        
       </form>
       {
         (window.onbeforeunload = () => {

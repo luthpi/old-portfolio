@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Socials = () => {
   return (
-    <>
+    <div data-aos="fade-up">
       <span className="mx-auto my-3 flex flex-wrap items-center justify-center gap-2">
         <a
           href="https://instagram.com/luthpai"
@@ -23,7 +23,7 @@ const Socials = () => {
           <FontAwesomeIcon icon={faGithub} className="text-2xl" />
         </a>
       </span>
-    </>
+    </div>
   );
 };
 

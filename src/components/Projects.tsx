@@ -28,22 +28,31 @@ const Projects = () => {
   const [repo, setRepo] = useState(false);
   const hoverRepo = () => setRepo(!repo);
 
-  const projectsData = [
+  interface project {
+    id: number,
+    img: string | null,
+    title: string,
+    description: string,
+    link: string | null,
+    repo: string | null
+  }
+  
+  const projectsData: project[] = [
     {
       id: 1,
-      img: "null",
+      img: null,
       title: "Oops!",
       description: "There is no project yet",
-      link: "null",
-      repo: "null",
-    },
+      link: null,
+      repo: null,
+    }
   ];
 
   return (
     <div
       id="projects"
       ref={projects}
-      className="lg:flx-row flex h-fit w-full flex-col flex-nowrap items-center justify-center gap-x-2 gap-y-2 bg-[#272727] px-8 py-12 text-white md:px-20"
+      className="lg:flx-row flex h-fit w-full flex-col flex-nowrap items-center justify-center gap-x-2 gap-y-2 bg-[#272727] px-4 py-12 text-white md:px-20"
     >
       <h1
         className="mx-8 inline-block rounded-sm border-b-4 border-sky-600 pb-2 text-4xl font-bold"
@@ -51,32 +60,32 @@ const Projects = () => {
       >
         Projects
       </h1>
-      <div className="mx-auto flex w-[95%] flex-col flex-wrap items-center justify-center gap-3 py-6 md:flex-row">
+      <div className="mx-auto flex w-[100%] flex-col flex-wrap items-center justify-center gap-3 py-4 md:flex-row">
         {projectsData.map((project) => {
           return (
             <div
-              className="custom-transition mx-auto w-[240px] rounded-lg bg-[#303030] p-5 shadow-lg md:w-[390px]"
+              className="custom-transition w-[80vw] rounded-lg bg-[#303030] py-2 px-4 shadow-lg md:w-[40%]"
               data-aos="flip-left"
               key={project.id}
             >
-              {project.img !== "null" ? (
-                <img className="mx-auto mb-2 w-fit" alt="" src={project.img} />
+              {project.img !== null ? (
+                <img className="mx-auto rounded-lg w-fit" alt="" src={project.img} />
               ) : (
                 ""
               )}
-              <h1 className="mb-2 text-xl font-semibold" data-aos="fade-left">
+              <h1 className="text-xl mt-2 font-semibold">
                 {" "}
                 {project.title}{" "}
               </h1>
-              <p className="mb-2" data-aos="fade-left">
+              <p className="mb-2">
                 {" "}
                 {project.description}{" "}
               </p>
               <span className="flex gap-2">
-                {project.link !== "null" ? (
+                {project.link !== null ? (
                   <a
                     href={project.link}
-                    className="small-btn group mt-2 w-fit"
+                    className="small-btn group w-fit"
                     target="__blank"
                   >
                     Visit{" "}
@@ -88,10 +97,10 @@ const Projects = () => {
                 ) : (
                   ""
                 )}
-                {project.repo !== "null" ? (
+                {project.repo !== null ? (
                   <a
                     href={project.repo}
-                    className="small-btn group mt-2 w-fit"
+                    className="small-btn group w-fit"
                     target="__blank"
                     onMouseEnter={hoverRepo}
                   >

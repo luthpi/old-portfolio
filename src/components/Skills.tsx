@@ -5,6 +5,7 @@ import {
   SiPhp,
   SiBootstrap,
   SiVuedotjs,
+  SiNextdotjs
 } from "react-icons/si";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 
@@ -52,6 +53,7 @@ const Skills = () => {
     { id: 3, name: "Tailwind", ico: SiTailwindcss, text: "white", bg: "#303030" },
     { id: 4, name: "React", ico: FaReact, text: "white", bg: "#303030" },
     { id: 5, name: "Vue", ico: SiVuedotjs, text: "white", bg: "#303030" },
+    { id: 6, name: "Next", ico: SiNextdotjs, text: "white", bg: "#303030" },
   ];
 
   return (

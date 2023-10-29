@@ -49,16 +49,15 @@ const About = () => {
           >
             <span>
               I'm <strong>Luthfi Afriansyah</strong>. I'm into web development,
-              especially front end. I can work with React or Vue with Tailwind,
-              I can use frameworks like Next or Nuxt.
+              especially front end. I can work with some javascript framework or libraries like React, Vue and Next. I always use Tailwind for styling.
             </span>
             <span>
               I was born in May 2009. I started learning about web development
-              since I was 12. My dad handed me keyboard and mouse when I was 4.
+              since I was 13. My dad handed me keyboard and mouse when I was 4.
               I also use Linux, although I'm a distro hooper.
             </span>
             <span>
-              I have intermediate level of English, I'm a fast learner, I can
+              I can speak English, I'm the Golden Winner of Global House Indonesia English Olympic 2023, I'm a fast learner, I can
               solve problems quickly, I always be energetic when I'm coding!
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>

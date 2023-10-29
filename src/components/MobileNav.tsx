@@ -6,7 +6,7 @@ import { BsPerson } from "react-icons/bs";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { AiOutlineFolderOpen, AiOutlineMail } from "react-icons/ai";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { BiSolidChevronsRight } from "react-icons/bi";
+import { BiSolidChevronsUp } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const MobileNav = () => {
@@ -28,8 +28,8 @@ const MobileNav = () => {
         ref={ref}
         className={
           !nav
-            ? "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-x-full flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 shadow-2xl md:hidden"
-            : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-x-0 flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 md:hidden"
+            ? "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-y-[-120%] flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 shadow-2xl md:hidden"
+            : "mnshadow fixed right-0 top-0 box-border flex h-fit w-[45vw] translate-y-100 flex-col items-center justify-center rounded-bl-2xl border-b-[2px] border-l-[2px] border-gray-400 bg-[#161616] pb-14 pt-6 md:hidden"
         }
       >
         <ul className="flex flex-col items-start justify-center gap-[9px] text-[20px]">
@@ -81,7 +81,7 @@ const MobileNav = () => {
           onClick={navClick}
           className="absolute -bottom-5 w-fit rounded-full border-[2px] border-gray-400 bg-[#202020] p-2 text-xl"
         >
-          <BiSolidChevronsRight />
+          <BiSolidChevronsUp />
         </button>
       </div>
     </>
