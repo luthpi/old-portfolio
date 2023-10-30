@@ -59,8 +59,7 @@ const About = () => {
               I also use Linux, although I'm a distro hooper.
             </span>
             <span>
-              I can speak English, I'm the Golden Winner of Global House
-              Indonesia English Olympic 2023, I'm a fast learner, I can solve
+              I can speak English, I'm a fast learner, I can solve
               problems quickly, I always be energetic when I'm coding!
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>
