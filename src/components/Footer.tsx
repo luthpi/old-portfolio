@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center bg-[#171717] py-3 pb-16 text-white">
+    <footer className="flex flex-col items-center justify-center bg-[#171717] py-8 text-white">
       <div className="flex flex-col items-center gap-1">
         <img src={logo} alt="logo" width="48" />
         <span className="text-sm font-semibold text-sky-400">Luthpai</span>

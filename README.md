@@ -1,6 +1,6 @@
 # Luthpai's Portfolio
 
-My portfolio, built with React, Axios, React Router and Tailwind.
+My portfolio, built with React Typescript, Axios, React Router and Tailwind.
 
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=luthpai&style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)

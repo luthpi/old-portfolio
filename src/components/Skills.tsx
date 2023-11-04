@@ -45,8 +45,6 @@ const Skills = () => {
     id: number;
     name: string;
     ico: SVGElement;
-    text: string;
-    bg: string;
   }
 
   const langs: item[] = [
@@ -98,7 +96,6 @@ const Skills = () => {
       name: "Flask",
       ico: BiLogoFlask,
     },
-    { id: 3, name: "Next", ico: SiNextdotjs },
   ];
 
   return (
@@ -113,14 +110,12 @@ const Skills = () => {
       >
         Skillset
       </h1>
-      <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-5 md:items-stretch md:px-20">
+      <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-5 md:px-20">
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2"
+          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
           data-aos="flip-left"
         >
-          <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
-            Languages
-          </h1>
+          <h1 className="text-[23px] font-semibold md:text-lg">Languages</h1>
           <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
             {langs.map((lang) => {
               const Ico: React.ReactElement = lang.ico;
@@ -133,49 +128,41 @@ const Skills = () => {
           </div>
         </div>
         <div
-          className="mt-2 flex flex-col items-center gap-2"
+          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
           data-aos="flip-left"
         >
-          <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
-            Front End
-          </h1>
+          <h1 className="text-[23px] font-semibold md:text-lg">Front End</h1>
           <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
             {fes.map((fe) => {
               const Ico: React.ReactElement = fe.ico;
               return (
                 <div
                   className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
-                  style={{ color: fe.text, backgroundColor: fe.bg }}
                   data-aos="fade-right"
-                  key={fe.key}
                 >
                   <Ico className="text-[30px]" />
                 </div>
               );
             })}
           </div>
-          <div
-            className="mt-2 flex w-full flex-col items-center gap-2"
-            data-aos="flip-left"
-          >
-            <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
-              Back End
-            </h1>
-            <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
-              {bes.map((be) => {
-                const Ico: React.ReactElement = be.ico;
-                return (
-                  <div
-                    className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
-                    style={{ color: be.text, backgroundColor: be.bg }}
-                    data-aos="fade-right"
-                    key={be.key}
-                  >
-                    <Ico className="text-[30px]" />
-                  </div>
-                );
-              })}
-            </div>
+        </div>
+        <div
+          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
+          data-aos="flip-left"
+        >
+          <h1 className="text-[23px] font-semibold md:text-lg">Back End</h1>
+          <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
+            {bes.map((be) => {
+              const Ico: React.ReactElement = be.ico;
+              return (
+                <div
+                  className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
+                  data-aos="fade-right"
+                >
+                  <Ico className="text-[30px]" />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
