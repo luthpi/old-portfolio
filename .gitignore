@@ -26,3 +26,5 @@ src/api-test.mjs
 replit.nix
 .replit
 .cache
+.upm
+.config

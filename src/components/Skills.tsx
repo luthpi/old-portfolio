@@ -6,8 +6,18 @@ import {
   SiBootstrap,
   SiVuedotjs,
   SiNextdotjs,
+  SiSvelte,
+  SiAlpinedotjs,
+  SiExpress,
+  SiCsharp,
+  SiBlazor,
 } from "react-icons/si";
-import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
+import {
+  BiLogoTypescript,
+  BiLogoJavascript,
+  BiLogoPython,
+  BiLogoFlask,
+} from "react-icons/bi";
 
 const Skills = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -40,44 +50,55 @@ const Skills = () => {
   }
 
   const langs: item[] = [
-    { id: 1, name: "HTML", ico: FaHtml5, text: "white", bg: "#303030" },
-    { id: 2, name: "CSS", ico: FaCss3Alt, text: "white", bg: "#303030" },
+    { id: 1, name: "HTML", ico: FaHtml5 },
+    { id: 2, name: "CSS", ico: FaCss3Alt },
     {
       id: 3,
       name: "Javascript",
       ico: BiLogoJavascript,
-      text: "white",
-      bg: "#303030",
     },
     {
       id: 4,
       name: "Typescript",
       ico: BiLogoTypescript,
-      text: "white",
-      bg: "#303030",
     },
-    { id: 5, name: "PHP", ico: SiPhp, text: "white", bg: "#303030" },
+    { id: 5, name: "PHP", ico: SiPhp },
+    { id: 6, name: "Python", ico: BiLogoPython },
+    { id: 7, name: "CSharp", ico: SiCsharp },
   ];
 
-  const fws: item[] = [
-    { id: 1, name: "SASS", ico: FaSass, text: "white", bg: "#303030" },
+  const fes: item[] = [
+    { id: 1, name: "SASS", ico: FaSass },
     {
       id: 2,
       name: "Bootstrap",
       ico: SiBootstrap,
-      text: "white",
-      bg: "#303030",
     },
     {
       id: 3,
       name: "Tailwind",
       ico: SiTailwindcss,
-      text: "white",
-      bg: "#303030",
     },
-    { id: 4, name: "React", ico: FaReact, text: "white", bg: "#303030" },
-    { id: 5, name: "Vue", ico: SiVuedotjs, text: "white", bg: "#303030" },
-    { id: 6, name: "Next", ico: SiNextdotjs, text: "white", bg: "#303030" },
+    { id: 4, name: "React", ico: FaReact },
+    { id: 5, name: "Vue", ico: SiVuedotjs },
+    { id: 6, name: "Alpine", ico: SiAlpinedotjs },
+    { id: 7, name: "Next", ico: SiNextdotjs },
+    { id: 8, name: "Svelte", ico: SiSvelte },
+    { id: 9, name: "Blazor", ico: SiBlazor },
+  ];
+
+  const bes: item[] = [
+    {
+      id: 1,
+      name: "Express",
+      ico: SiExpress,
+    },
+    {
+      id: 2,
+      name: "Flask",
+      ico: BiLogoFlask,
+    },
+    { id: 3, name: "Next", ico: SiNextdotjs },
   ];
 
   return (
@@ -92,24 +113,19 @@ const Skills = () => {
       >
         Skillset
       </h1>
-      <div className="custom-transition box-border flex w-full flex-col items-start justify-center gap-2 px-5 md:items-stretch md:px-20">
+      <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-5 md:items-stretch md:px-20">
         <div
-          className="mt-5 flex w-full flex-col items-center gap-2"
+          className="mt-2 flex w-full flex-col items-center gap-2"
           data-aos="flip-left"
         >
           <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
             Languages
           </h1>
-          <div className="flex w-full flex-wrap justify-center gap-2 rounded-lg px-4 py-1">
+          <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
             {langs.map((lang) => {
               const Ico: React.ReactElement = lang.ico;
               return (
-                <div
-                  className="border-box custom-transition flex items-center justify-center gap-3 rounded-md p-2 shadow-lg"
-                  style={{ color: lang.text, backgroundColor: lang.bg }}
-                  data-aos="fade-right"
-                  key={lang.key}
-                >
+                <div className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg">
                   <Ico className="text-[30px]" />
                 </div>
               );
@@ -117,26 +133,49 @@ const Skills = () => {
           </div>
         </div>
         <div
-          className="mt-5 flex w-full flex-col items-center gap-2"
+          className="mt-2 flex flex-col items-center gap-2"
           data-aos="flip-left"
         >
-          <h1 className="mb-2 text-[18px] font-semibold md:text-lg">
-            Frameworks, Libraries, etc.
+          <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
+            Front End
           </h1>
-          <div className="flex w-full flex-wrap justify-center gap-2 rounded-lg px-4 py-1">
-            {fws.map((fw) => {
-              const Ico: React.ReactElement = fw.ico;
+          <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
+            {fes.map((fe) => {
+              const Ico: React.ReactElement = fe.ico;
               return (
                 <div
-                  className="border-box custom-transition flex items-center justify-center gap-3 rounded-md p-2 shadow-lg"
-                  style={{ color: fw.text, backgroundColor: fw.bg }}
+                  className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
+                  style={{ color: fe.text, backgroundColor: fe.bg }}
                   data-aos="fade-right"
-                  key={fw.key}
+                  key={fe.key}
                 >
                   <Ico className="text-[30px]" />
                 </div>
               );
             })}
+          </div>
+          <div
+            className="mt-2 flex w-full flex-col items-center gap-2"
+            data-aos="flip-left"
+          >
+            <h1 className="mb-2 text-[23px] font-semibold md:text-lg">
+              Back End
+            </h1>
+            <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
+              {bes.map((be) => {
+                const Ico: React.ReactElement = be.ico;
+                return (
+                  <div
+                    className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
+                    style={{ color: be.text, backgroundColor: be.bg }}
+                    data-aos="fade-right"
+                    key={be.key}
+                  >
+                    <Ico className="text-[30px]" />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

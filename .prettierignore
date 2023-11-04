@@ -9,3 +9,5 @@ README.md
 index.html
 .prettierrc
 .eslintrc.yml
+.upm
+.config

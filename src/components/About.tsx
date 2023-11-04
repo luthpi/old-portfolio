@@ -49,9 +49,10 @@ const About = () => {
           >
             <span>
               I'm <strong>Luthfi Afriansyah</strong>. I'm into web development,
-              especially front end. I can work with some javascript framework or
-              libraries like React, Vue and Next. I always use Tailwind for
-              styling.
+              especially front end. I can work with some JavaScript frameworks
+              or libraries like <strong>React, Vue, Alpine and Svelte</strong>.
+              But I use React the most because I was born in React Ecosystem. I
+              can also use Nextjs. I always use Tailwind for styling.
             </span>
             <span>
               I was born in May 2009. I started learning about web development
@@ -59,8 +60,8 @@ const About = () => {
               I also use Linux, although I'm a distro hooper.
             </span>
             <span>
-              I can speak English, I'm a fast learner, I can solve
-              problems quickly, I always be energetic when I'm coding!
+              I can speak English, I'm a fast learner, I can solve problems
+              quickly, I always be energetic when I'm coding!
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>
           </div>
