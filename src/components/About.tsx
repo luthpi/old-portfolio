@@ -51,7 +51,7 @@ const About = () => {
               I'm <strong>Luthfi Afriansyah</strong>. I'm into web development,
               especially front end. I can work with some JavaScript frameworks
               or libraries like <strong>React, Vue, Alpine and Svelte</strong>.
-              But I use React the most because I was born in React Ecosystem. I
+              But I use React the most because I came from React Ecosystem. I
               can also use Nextjs. I always use Tailwind for styling.
             </span>
             <span>

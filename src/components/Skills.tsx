@@ -11,6 +11,8 @@ import {
   SiExpress,
   SiCsharp,
   SiBlazor,
+  SiMui,
+  SiCplusplus
 } from "react-icons/si";
 import {
   BiLogoTypescript,
@@ -44,7 +46,7 @@ const Skills = () => {
   interface item {
     id: number;
     name: string;
-    ico: SVGElement;
+    ico: any;
   }
 
   const langs: item[] = [
@@ -63,6 +65,7 @@ const Skills = () => {
     { id: 5, name: "PHP", ico: SiPhp },
     { id: 6, name: "Python", ico: BiLogoPython },
     { id: 7, name: "CSharp", ico: SiCsharp },
+    { id: 8, name: "CPlusPlus", ico: SiCplusplus },
   ];
 
   const fes: item[] = [
@@ -77,12 +80,17 @@ const Skills = () => {
       name: "Tailwind",
       ico: SiTailwindcss,
     },
-    { id: 4, name: "React", ico: FaReact },
-    { id: 5, name: "Vue", ico: SiVuedotjs },
-    { id: 6, name: "Alpine", ico: SiAlpinedotjs },
-    { id: 7, name: "Next", ico: SiNextdotjs },
-    { id: 8, name: "Svelte", ico: SiSvelte },
-    { id: 9, name: "Blazor", ico: SiBlazor },
+    {
+      id: 4,
+      name: "MUI",
+      ico: SiMui,
+    },
+    { id: 5, name: "React", ico: FaReact },
+    { id: 6, name: "Vue", ico: SiVuedotjs },
+    { id: 7, name: "Alpine", ico: SiAlpinedotjs },
+    { id: 8, name: "Next", ico: SiNextdotjs },
+    { id: 9, name: "Svelte", ico: SiSvelte },
+    { id: 10, name: "Blazor", ico: SiBlazor },
   ];
 
   const bes: item[] = [
@@ -95,7 +103,7 @@ const Skills = () => {
       id: 2,
       name: "Flask",
       ico: BiLogoFlask,
-    },
+    }
   ];
 
   return (
@@ -110,9 +118,9 @@ const Skills = () => {
       >
         Skillset
       </h1>
-      <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-5 md:px-20">
+      <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-6">
         <div
-          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Languages</h1>
@@ -120,15 +128,17 @@ const Skills = () => {
             {langs.map((lang) => {
               const Ico: React.ReactElement = lang.ico;
               return (
-                <div className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg">
-                  <Ico className="text-[30px]" />
+                <div className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
+                  data-aos="fade-right"
+                  >
+                  <Ico className="text-[28px]" />
                 </div>
               );
             })}
           </div>
         </div>
         <div
-          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Front End</h1>
@@ -140,14 +150,14 @@ const Skills = () => {
                   className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
                   data-aos="fade-right"
                 >
-                  <Ico className="text-[30px]" />
+                  <Ico className="text-[28px]" />
                 </div>
               );
             })}
           </div>
         </div>
         <div
-          className="mt-2 flex w-fit flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Back End</h1>
@@ -159,7 +169,7 @@ const Skills = () => {
                   className="border-box custom-transition flex items-center justify-center gap-3 rounded-md bg-[#303030] p-2 shadow-lg"
                   data-aos="fade-right"
                 >
-                  <Ico className="text-[30px]" />
+                  <Ico className="text-[28px]" />
                 </div>
               );
             })}

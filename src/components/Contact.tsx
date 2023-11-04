@@ -47,7 +47,7 @@ const Contact = () => {
               type="text"
               id="inputName"
               name="name"
-              className="h-[40px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
+              className="h-[36px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
               placeholder="Full Name"
               spellCheck="false"
               required
@@ -58,7 +58,7 @@ const Contact = () => {
               type="email"
               id="inputEmail"
               name="email"
-              className="h-[40px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
+              className="h-[36px] w-full rounded-lg bg-[#343434] px-3 py-2 text-white focus:outline-0"
               placeholder="Email"
               spellCheck="false"
               required
