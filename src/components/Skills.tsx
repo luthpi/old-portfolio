@@ -9,10 +9,9 @@ import {
   SiSvelte,
   SiAlpinedotjs,
   SiExpress,
-  SiCsharp,
-  SiBlazor,
-  SiMui,
-  SiCplusplus
+  SiCplusplus,
+  SiFastify,
+  SiFastapi
 } from "react-icons/si";
 import {
   BiLogoTypescript,
@@ -64,8 +63,7 @@ const Skills = () => {
     },
     { id: 5, name: "PHP", ico: SiPhp },
     { id: 6, name: "Python", ico: BiLogoPython },
-    { id: 7, name: "CSharp", ico: SiCsharp },
-    { id: 8, name: "CPlusPlus", ico: SiCplusplus },
+    { id: 7, name: "CPlusPlus", ico: SiCplusplus },
   ];
 
   const fes: item[] = [
@@ -80,17 +78,11 @@ const Skills = () => {
       name: "Tailwind",
       ico: SiTailwindcss,
     },
-    {
-      id: 4,
-      name: "MUI",
-      ico: SiMui,
-    },
-    { id: 5, name: "React", ico: FaReact },
-    { id: 6, name: "Vue", ico: SiVuedotjs },
-    { id: 7, name: "Alpine", ico: SiAlpinedotjs },
-    { id: 8, name: "Next", ico: SiNextdotjs },
-    { id: 9, name: "Svelte", ico: SiSvelte },
-    { id: 10, name: "Blazor", ico: SiBlazor },
+    { id: 4, name: "React", ico: FaReact },
+    { id: 5, name: "Vue", ico: SiVuedotjs },
+    { id: 6, name: "Alpine", ico: SiAlpinedotjs },
+    { id: 7, name: "Next", ico: SiNextdotjs },
+    { id: 8, name: "Svelte", ico: SiSvelte },
   ];
 
   const bes: item[] = [
@@ -103,6 +95,16 @@ const Skills = () => {
       id: 2,
       name: "Flask",
       ico: BiLogoFlask,
+    },
+    {
+      id: 3,
+      name: "Fastify",
+      ico: SiFastify,
+    },
+    {
+      id: 4,
+      name: "FastAPI",
+      ico: SiFastapi,
     }
   ];
 
@@ -120,7 +122,7 @@ const Skills = () => {
       </h1>
       <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-6">
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Languages</h1>
@@ -138,7 +140,7 @@ const Skills = () => {
           </div>
         </div>
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Front End</h1>
@@ -157,7 +159,7 @@ const Skills = () => {
           </div>
         </div>
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-2xl md:px-3"
+          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg md:px-3"
           data-aos="flip-left"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Back End</h1>
