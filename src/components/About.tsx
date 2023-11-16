@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Socials from "./Socials";
 
-const About = () => {
+const About: React.FC = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const about = useRef(null);
 
@@ -48,24 +48,15 @@ const About = () => {
             data-aos="fade-right"
           >
             <span>
-              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development,
-              especially front end. I can work with some JavaScript frameworks
-              or libraries like <strong>React, Vue, Alpine and Svelte</strong>.
-              But I use React the most because I came from React Ecosystem. I
-              can also use Nextjs. I always use Tailwind for styling.
+              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development. I use <strong>React and Vue</strong> to build interactive web app. I always use Tailwind CSS for styling.
             </span>
             <span>
               I was born in May 2009. I started learning about web development
               since I was 13. My dad handed me keyboard and mouse when I was 4.
-              I also use Linux, although I'm a distro hooper.
-            </span>
-            <span>
-              I can speak English, I'm a fast learner, I can solve problems
-              quickly, I always be energetic when I'm coding!
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>
           </div>
-          <Socials aos="fade-up" />
+          <Socials data-aos="fade-up" />
         </div>
       </div>
     </div>

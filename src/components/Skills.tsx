@@ -1,17 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiPhp,
-  SiBootstrap,
   SiVuedotjs,
-  SiNextdotjs,
-  SiSvelte,
   SiAlpinedotjs,
   SiExpress,
-  SiCplusplus,
-  SiFastify,
-  SiFastapi
 } from "react-icons/si";
 import {
   BiLogoTypescript,
@@ -20,9 +13,9 @@ import {
   BiLogoFlask,
 } from "react-icons/bi";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const skills = useRef(null);
+  const skills = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const skillsObserver = new IntersectionObserver(
@@ -61,28 +54,18 @@ const Skills = () => {
       name: "Typescript",
       ico: BiLogoTypescript,
     },
-    { id: 5, name: "PHP", ico: SiPhp },
-    { id: 6, name: "Python", ico: BiLogoPython },
-    { id: 7, name: "CPlusPlus", ico: SiCplusplus },
+    { id: 5, name: "Python", ico: BiLogoPython },
   ];
 
   const fes: item[] = [
-    { id: 1, name: "SASS", ico: FaSass },
     {
-      id: 2,
-      name: "Bootstrap",
-      ico: SiBootstrap,
-    },
-    {
-      id: 3,
+      id: 1,
       name: "Tailwind",
       ico: SiTailwindcss,
     },
-    { id: 4, name: "React", ico: FaReact },
-    { id: 5, name: "Vue", ico: SiVuedotjs },
-    { id: 6, name: "Alpine", ico: SiAlpinedotjs },
-    { id: 7, name: "Next", ico: SiNextdotjs },
-    { id: 8, name: "Svelte", ico: SiSvelte },
+    { id: 2, name: "React", ico: FaReact },
+    { id: 3, name: "Vue", ico: SiVuedotjs },
+    { id: 4, name: "Alpine", ico: SiAlpinedotjs },
   ];
 
   const bes: item[] = [
@@ -96,16 +79,6 @@ const Skills = () => {
       name: "Flask",
       ico: BiLogoFlask,
     },
-    {
-      id: 3,
-      name: "Fastify",
-      ico: SiFastify,
-    },
-    {
-      id: 4,
-      name: "FastAPI",
-      ico: SiFastapi,
-    }
   ];
 
   return (
