@@ -1,7 +1,7 @@
 import React from "react";
 import MobileNav from "./MobileNav";
 import WideNavbar from "./WideNavbar";
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div
       id="navbar"

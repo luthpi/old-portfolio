@@ -27,9 +27,6 @@ const WideNavbar = () => {
         <li className="liFunc" id="liContact">
           <a href="#contact"> Contact</a>
         </li>
-        <li className="liFunc" id="liBlog">
-          <Link to="/blog"> Blog</Link>
-        </li>
       </ul>
     </>
   );

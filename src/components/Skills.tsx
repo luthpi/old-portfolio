@@ -95,8 +95,9 @@ const Skills: React.FC = () => {
       </h1>
       <div className="custom-transition box-border flex w-full flex-col items-center justify-center gap-2 px-6">
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg px-3"
+          className="mt-2 flex w-full flex-col items-center gap-1 rounded-xl bg-[#282828] pt-3 pb-4 shadow-lg px-3"
           data-aos="flip-left"
+          data-aos-delay="250"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Languages</h1>
           <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
@@ -113,8 +114,9 @@ const Skills: React.FC = () => {
           </div>
         </div>
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg px-3"
+          className="mt-2 flex w-full flex-col items-center gap-1 rounded-xl bg-[#282828] pt-3 pb-4 shadow-lg px-3"
           data-aos="flip-left"
+          data-aos-delay="250"  
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Front End</h1>
           <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">
@@ -132,8 +134,9 @@ const Skills: React.FC = () => {
           </div>
         </div>
         <div
-          className="mt-2 flex w-full flex-col items-center gap-2 rounded-xl bg-[#282828] py-6 shadow-lg md:px-3"
+          className="mt-2 flex w-full flex-col items-center gap-1 rounded-xl bg-[#282828] pt-3 pb-4 shadow-lg md:px-3"
           data-aos="flip-left"
+          data-aos-delay="250"
         >
           <h1 className="text-[23px] font-semibold md:text-lg">Back End</h1>
           <div className="flex w-[80vw] flex-wrap justify-center gap-2 rounded-lg px-4 py-1 md:w-full">

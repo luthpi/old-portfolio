@@ -68,13 +68,6 @@ const MobileNav = () => {
             <AiOutlineMail />
             <a href="#contact"> Contact</a>
           </li>
-          <li
-            onClick={navClick}
-            className="custom-transition flex items-center justify-between gap-2  hover:scale-110 hover:text-gray-300"
-          >
-            <IoDocumentTextOutline />
-            <Link to="/blog"> Blog</Link>
-          </li>
         </ul>
         <button
           aria-label="button"

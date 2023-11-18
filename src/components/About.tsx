@@ -48,7 +48,7 @@ const About: React.FC = () => {
             data-aos="fade-right"
           >
             <span>
-              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development. I use <strong>React and Vue</strong> to build interactive web app. I always use Tailwind CSS for styling.
+              I'm <strong>Luthfi Afriansyah</strong>. I'm into web development. I use <strong>React</strong> and <strong>Vue</strong> to build interactive web app. I always use Tailwind CSS for styling.
             </span>
             <span>
               I was born in May 2009. I started learning about web development
@@ -56,7 +56,7 @@ const About: React.FC = () => {
             </span>
             <span>I have a GitHub and Instagram account! Check them out!</span>
           </div>
-          <Socials data-aos="fade-up" />
+          <Socials aos="fade-up" />
         </div>
       </div>
     </div>

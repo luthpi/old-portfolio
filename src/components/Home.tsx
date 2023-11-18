@@ -2,17 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import unbg from "../../assets/img/unbg2.png";
+import unbg from "/assets/img/unbg2.png";
 
-const Home = () => {
+const Home: React.FC = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const home = useRef(null);
-  const navigate = useNavigate();
-
-  const blogHandle = () => {
-    window.scrollTo(0, 0);
-    navigate("blog");
-  };
+  const home = useRef();
 
   useEffect(() => {
     const homeObserver = new IntersectionObserver(
@@ -57,10 +51,6 @@ const Home = () => {
             Projects
             <AiOutlineFolderOpen className="custom-transition text-xl group-hover:ml-2" />
           </a>
-          <button onClick={blogHandle} aria-label="a" className="btn group">
-            Blog
-            <IoDocumentTextOutline className="custom-transition text-xl group-hover:ml-2" />
-          </button>
         </div>
       </div>
     </div>
